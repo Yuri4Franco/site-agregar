@@ -1,0 +1,150 @@
+.header {
+  background-color: rgb(2, 0, 36);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+}
+
+.header-azul {
+  background-color: #0a2770;
+}
+.logo-agregar-container {
+  align-items: center;
+  height: 100%;
+  display: flex;
+  margin-left: 10%;
+  justify-content: flex-start;
+}
+
+.logo-agregar-header {
+  height: 80%;
+  width: auto;
+  max-width: 180px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  margin-right: 10%;
+  justify-content: flex-end;
+}
+
+.item-menu {
+  color: white;
+  font-family: "poppins";
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.item-menu:hover {
+  color: #0fb6ee;
+  transform: translateY(-3px);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.item-menu:focus-visible {
+  outline: 3px solid #0fb6ee;
+  outline-offset: 4px;
+  color: #0fb6ee;
+  transform: translateY(-3px);
+}
+
+.toggle-menu {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: none;
+}
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  height: 30px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 10px;
+  transition-duration: 0.5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+#second {
+  transition-duration: 0.8s;
+}
+
+#first,
+#third {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #second {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #first {
+  width: 80%;
+  transform: rotate(40deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #third {
+  width: 80%;
+  transform: rotate(-40deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+/* Para telas menores (mobile) */
+@media (max-width: 1080px) {
+  .header {
+    height: 70px;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #0a2770;
+    padding: 20px;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .toggle-menu {
+    display: flex;
+    margin-right: 5%;
+  }
+}

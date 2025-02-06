@@ -1,0 +1,5 @@
+.section-1 {
+  height: 100vh;      /* Ocupa 100% da altura da tela */
+  display: flex;      /* Layout flexível */
+  flex-direction: column;  /* Empilha o Header em cima e o Hero embaixo */
+}

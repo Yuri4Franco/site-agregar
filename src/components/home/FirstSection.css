@@ -1,0 +1,77 @@
+.first-section-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 350px repeat(3, 200px);
+  grid-column: auto;
+  justify-items: center;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 70%,
+    rgba(10, 39, 112, 1) 100%
+  );
+}
+
+.first-section-container-text-h1 {
+  padding: 10px;
+  justify-items: start;
+  height: 300px;
+  max-width: 300px;
+  border-left: 3px solid blue;
+}
+
+.first-section-container-text-h2 {
+  padding: 10px;
+  justify-items: start;
+  height: 200px;
+  max-height: 300px;
+  max-width: 300px;
+  border-left: 3px solid blue;
+}
+
+.first-section-h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: white;
+  line-height: 0.8;
+  background-image: linear-gradient(
+    transparent 50%,
+    blue 50%,
+    blue 85%,
+    transparent 85%,
+    transparent 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%; /* Começa sem underline */
+  transition: background-size 2s cubic-bezier(0.5, 0.04, 0.3, 1); /* Suaviza a animação */
+}
+
+.first-section-h1.visible {
+  background-size: 100% 100%; /* Aparece quando o usuário visualizar */
+}
+
+.first-section-h2 {
+  font-family: "poppins";
+  font-size: 25px;
+  color: white;
+  line-height: 0.8;
+}
+
+.first-section-p {
+  font-family: "poppins";
+  font-size: 16px;
+  color: white;
+  line-height: 1.2;
+  text-align: justify;
+  margin-top: 15px;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+#ph1 {
+  width: 250px;
+}
