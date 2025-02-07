@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ParticlesBackground from "../ParticlesBackground";
 import Logo from "../../assets/logo/logo-marca.svg";
 import { motion, AnimatePresence } from 'framer-motion';
 import "./HeroSection.css"
@@ -16,7 +15,6 @@ function HeroSection() {
 
     return (
         <>
-            {/*}<ParticlesBackground />*/}
             <div className="hero-section-container">
                 <motion.img
                     src={Logo}
@@ -36,8 +34,8 @@ function HeroSection() {
                     <h1 id="hero-section-h1">
                         O hub de inovação <br /> do noroeste do Rio Grande do Sul
                     </h1>
-                    <span id='cursor'><p id='hero-section-p'>{palavras}</p><Cursor /></span>
-                    
+                    <p id='hero-section-p'>{palavras}</p>
+                    <span id='cursor'><Cursor /></span>
                 </motion.div>
 
             </div>

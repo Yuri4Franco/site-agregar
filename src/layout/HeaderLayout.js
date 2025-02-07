@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./HeaderLayout.css";
 import Logo from "../assets/logo/logo-white-font.svg";
-import Headroom from "react-headroom";
+
 
 function HeaderLayout() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ function HeaderLayout() {
             </div>
             <div className={`toggle-menu ${menuOpen ? "open" : ""}`}>
                 <input type="checkbox" id="checkbox" onClick={toggleMenu}></input>
-                <label for="checkbox" className="toggle">
+                <label htmlFor="checkbox" className="toggle">
                     <div className="bars" id="first"></div>
                     <div className="bars" id="second"></div>
                     <div className="bars" id="third"></div>
