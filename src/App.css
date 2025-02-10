@@ -4,9 +4,6 @@
   box-sizing: border-box; /* Ajuda no controle do layout */
 }
 
-:root {
-}
-
 html,
 body {
   height: 100%;
@@ -14,6 +11,7 @@ body {
   overflow-x: hidden; /* Evita scroll horizontal desnecessário */
   background: rgb(2, 0, 36);
   background: linear-gradient(180deg, rgba(2, 0, 36, 1) 70%, #0a2770 100%);
+  background-repeat: no-repeat;
 }
 
 .h1-titulo {

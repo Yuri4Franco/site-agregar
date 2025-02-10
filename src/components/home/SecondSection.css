@@ -1,3 +1,63 @@
-.second-section-container{
-    background-color: blue;
+#background-sobre {
+  position: relative;
+  background-image: url("../../assets/logo/inovacao-background.png");
+  background-size: contain;
+  width: 1400px;
+  justify-self: start;
+  height: 400px;
+  z-index: -1;
+  top:30px;
+  left: 30px;
+}
+
+.second-section-container {
+  position: relative;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 21.875rem 800px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 80vh;
+  z-index: 0;
+  background-image: url("../../assets/logo/inovacao-background.png");
+  background-size: contain;
+}
+
+.second-section-container-title {
+  padding: 10px;
+  justify-self: end;
+}
+
+#button-saiba-mais {
+  margin-top: 20px;
+  justify-items: center;
+  width: 100%;
+}
+
+.title-decoration {
+  display: block;
+  margin-top: 10px;
+  font-size: 60px;
+  background-position: center;
+  background-image: url("../../assets/logo/agregar-background.svg");
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 1.5s cubic-bezier(0.5, 0.04, 0.3, 1);
+}
+
+.title-decoration.visible {
+  background-size: 100% 100%;
+}
+
+#break {
+  display: block;
+}
+
+.second-section-container-text {
+  justify-self: center;
+  padding-left: 30px;
+  border-left: 3px solid blue;
 }
