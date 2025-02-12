@@ -30,10 +30,11 @@ function SecondSection() {
 
     return (
         <>
+        <div className="divisor-1"></div>
         <div className="second-section-container">
                 
             <div className="second-section-container-title" >
-                <h1 className="h1-titulo"> Sobre o  <span ref={h1Ref} className={`title-decoration ${isVisible ? "visible" : ""}`}>Instituto<span id="break">Agregar</span></span></h1>
+                    <h1 id="second-section-sobre"> Sobre o  <span ref={h1Ref} className={`title-decoration ${isVisible ? "visible" : ""}`}>Instituto<span id="break">Agregar</span></span></h1>
                 <div id="button-saiba-mais"><ButtonBlue ButtonText="SAIBA MAIS"></ButtonBlue></div>
             </div>
             <div className="second-section-container-text"><p className="p-texto"> O Instituto Agregar é um hub de Inovação sem fins lucrativos que busca o desenvolvimento regional do 

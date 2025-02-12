@@ -54,6 +54,10 @@
   background-size: 100% 100%;
 }
 
+#p-margin{
+   margin-top: 0.938rem;
+}
+
 @media (max-width: 1024px) {
   .first-section-container {
     padding-top: 0.625rem;

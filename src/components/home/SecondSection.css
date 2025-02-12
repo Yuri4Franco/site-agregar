@@ -1,14 +1,3 @@
-#background-sobre {
-  position: relative;
-  background-image: url("../../assets/logo/inovacao-background.png");
-  background-size: contain;
-  width: 1400px;
-  justify-self: start;
-  height: 400px;
-  z-index: -1;
-  top:30px;
-  left: 30px;
-}
 
 .second-section-container {
   position: relative;
@@ -22,13 +11,18 @@
   width: 100%;
   height: 80vh;
   z-index: 0;
-  background-image: url("../../assets/logo/inovacao-background.png");
-  background-size: contain;
+  background-color: black;
 }
 
 .second-section-container-title {
-  padding: 10px;
   justify-self: end;
+  margin-right: 1.875rem;
+}
+
+#second-section-sobre{
+  font-size: 2rem;
+  color: white;
+  line-height: 0.8;
 }
 
 #button-saiba-mais {
@@ -39,7 +33,6 @@
 
 .title-decoration {
   display: block;
-  margin-top: 10px;
   font-size: 60px;
   background-position: center;
   background-image: url("../../assets/logo/agregar-background.svg");

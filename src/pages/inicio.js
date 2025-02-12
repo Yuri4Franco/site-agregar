@@ -3,6 +3,7 @@ import "./Inicio.css"
 import HeroSection from "../components/home/HeroSection";
 import FirstSection from "../components/home/FirstSection";
 import SecondSection from "../components/home/SecondSection";
+import ThirdSection from "../components/home/ThirdSection";
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
             <HeaderLayout></HeaderLayout>
             <FirstSection></FirstSection>
             <SecondSection></SecondSection>
+            <ThirdSection></ThirdSection>
         </>
     );
 }
