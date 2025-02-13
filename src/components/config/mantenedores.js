@@ -38,7 +38,22 @@ const mantenedores = [
         nome: "Tromink",
         LogoNormal: require("../../assets/logo/logo-tromink-normal.png"),
         LogoWhite: require("../../assets/logo/logo-tromink-white.png")
-    }
+    },
+    {
+        nome: "3tentos",
+        LogoNormal: require("../../assets/logo/logo-3tentos-normal.png"),
+        LogoWhite: require("../../assets/logo/logo-3tentos-white.png")
+    },
+    {
+        nome: "3tentos",
+        LogoNormal: require("../../assets/logo/logo-3tentos-normal.png"),
+        LogoWhite: require("../../assets/logo/logo-3tentos-white.png")
+    },
+    {
+        nome: "3tentos",
+        LogoNormal: require("../../assets/logo/logo-3tentos-normal.png"),
+        LogoWhite: require("../../assets/logo/logo-3tentos-white.png")
+    },
 ];
 
 export default  mantenedores;
