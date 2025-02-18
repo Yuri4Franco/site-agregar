@@ -7,7 +7,7 @@ import ThirdSection from "./components/home/ThirdSection";
 function App() {
   return (
       <>
-      <ThirdSection></ThirdSection>
+      <Home></Home>
       </>
   );
 }

@@ -4,6 +4,7 @@ import HeroSection from "../components/home/HeroSection";
 import FirstSection from "../components/home/FirstSection";
 import SecondSection from "../components/home/SecondSection";
 import ThirdSection from "../components/home/ThirdSection";
+import FooterLayout from "../layout/FooterLayout";
 
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
             <FirstSection></FirstSection>
             <SecondSection></SecondSection>
             <ThirdSection></ThirdSection>
+            <FooterLayout></FooterLayout>
         </>
     );
 }

@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
+#span-nossos{
+  display: block;
+  font-size: 1.875rem;
+}
 /* Se sobrar 1 item */
 .cards-mantenedores > :nth-last-child(1):nth-child(4n + 1) {
   grid-column: 2 / span 2; /* Centraliza no meio */
@@ -25,10 +29,9 @@
   justify-self: center;
 }
 
-/* Se sobrarem 3 itens */
+
 .cards-mantenedores > :nth-last-child(3):nth-child(4n + 1),
 .cards-mantenedores > :nth-last-child(3):nth-child(4n + 2),
 .cards-mantenedores > :nth-last-child(3):nth-child(4n + 3) {
   justify-self: center;
-  grid-column: span 2 / 1  ;
 }
