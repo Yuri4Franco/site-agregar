@@ -15,6 +15,7 @@
 #span-nossos{
   display: block;
   font-size: 1.875rem;
+  text-align: center;
 }
 /* Se sobrar 1 item */
 .cards-mantenedores > :nth-last-child(1):nth-child(4n + 1) {

@@ -5,7 +5,7 @@ import { TbPhoneFilled, TbMailFilled, TbLocationFilled, TbBrandLinkedinFilled, T
 function FooterLayout() {
     return (
         <footer className="footer">
-            <div className="logo-informacoes">
+            <div className="footer-hero">
                 <div className="logo-agregar-footer">
                     <img src={Logo} id="logo-agregar-footer" alt="Instituto Agregar" />
                 </div>
@@ -40,6 +40,7 @@ function FooterLayout() {
 
             <div className="footer-menu">
                 <nav className="nav-menu-footer">
+                    <h4>MENU</h4>
                     <a className="item-menu" href="/">INICIO</a>
                     <a className="item-menu" href="/blog">BLOG</a>
                     <a className="item-menu" href="/blog">AGENDA</a>
@@ -50,34 +51,28 @@ function FooterLayout() {
                 </nav>
             </div>
 
-            <div className="footer-social">
-                <h3>Siga-nos em nossas redes sociais:</h3>
-
-                <div className="social-icons">
-                    <a href="https://www.instagram.com/agregarinstituto" target="_blank" rel="noreferrer" className="social-buttons">
-                        <div className="icon">
-                            <TbBrandInstagramFilled />
-                        </div>
-                        <span>Instagram</span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/company/instituto-agregar/" target="_blank" rel="noreferrer" className="social-buttons">
-                        <div className="icon">
-                            <TbBrandLinkedinFilled />
-                        </div>
-                        <span>LinkedIn</span>
-                    </a>
-
-                    <a href="https://www.youtube.com/@institutoagregar" target="_blank" rel="noreferrer" className="social-buttons">
-                        <div className="icon">
-                            <TbBrandYoutubeFilled />
-                        </div>
-                        <span>YouTube</span>
-                    </a>
+            <div className="footer-informacoes">
+                <div className="item-footer">
+                    <h4>ENDEREÇO:</h4>
+                    <p className="p-footer">
+                        <TbLocationFilled /> R. Konrad Adenauer, 555 - Sala B - Centro, Panambi - RS
+                    </p>
                 </div>
+                <div className="item-footer">
+                    <h4>CONTATO:</h4>
+                    <p className="p-footer">
+                        <TbMailFilled /> Email: institutoagregarrs@gmail.com
+                    </p>
+                    <p className="p-footer">
+                        <TbPhoneFilled /> Telefone: (55) 9 9682-1340
+                    </p>
+                </div>
+            </div>
+            <div className="footer-copyright">
+                <p> ©Instituto Agregar | Webdesigner: Arthur Fogaça Martins | Desenvolvedor web: Yuri Antunes Franco</p>
             </div>
         </footer>
     );
-}
+}   
 
 export default FooterLayout;

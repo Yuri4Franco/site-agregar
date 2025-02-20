@@ -1,6 +1,5 @@
 import ButtonBlue from "../buttons/ButtonBlue";
 import { useEffect, useState, useRef } from "react";
-import CardStyle1 from "../cards/CardStyle1";
 import "./SecondSection.css";
 
 
