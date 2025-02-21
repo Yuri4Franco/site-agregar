@@ -1,0 +1,104 @@
+.section-parceiros-container {
+  display: grid;
+  grid-template-columns: 300px 700px;
+  justify-content: center;
+  gap: 5px;
+}
+
+.section-parceiros-coluna-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: red;
+}
+
+.section-parceiros-coluna-2 {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-parceiros-coluna-2 h1 {
+  text-align: center;
+}
+
+.section-parceiros-coluna-2 h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-parceiros-coluna-2 p {
+  text-align: justify;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+
+.parceiros-social {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.parceiros-social .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.parceiros-social .social-icons .social-buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+
+.parceiros-social .social-icons .social-buttons .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.parceiros-social .social-icons .social-buttons span {
+  display: none;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  line-height: 50px;
+  transition: all 0s ease-out;
+}
+
+.parceiros-social .social-icons .social-buttons:hover {
+  width: 140px;
+  background-color: blue;
+  box-shadow: 0 0 15px blue, 0 0 10px blue, 0 0 20px blue;
+}
+
+.parceiros-social .social-icons .social-buttons:hover span {
+  display: flex;
+  transition: all 0.3s ease-out;
+}
+
+.parceiros-social.social-icons .social-buttons:hover .icon {
+  color: white;
+  display: flex;
+  justify-content: start;
+}

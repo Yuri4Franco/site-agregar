@@ -64,7 +64,7 @@
 }
 
 .social-icons .social-buttons .icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 40px;
@@ -85,7 +85,7 @@
 }
 
 .social-icons .social-buttons:hover {
-  width: 130px;
+  width: 140px;
   background-color: blue;
   box-shadow: 0 0 15px blue, 0 0 10px blue, 0 0 20px blue;
 }
@@ -97,6 +97,8 @@
 
 .social-icons .social-buttons:hover .icon {
   color: white;
+  display: flex;
+  justify-content: start;
 }
 
 /* Footer Menu */
@@ -193,5 +195,4 @@
   color: white;
   line-height: 1.4;
   text-align: center;
-
 }
