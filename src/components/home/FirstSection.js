@@ -29,7 +29,7 @@ function FirstSection() {
         <>
             <div className="first-section-container">
                 <div className="first-section-container-text-h1">
-                    <h1 ref={h1Ref} className={`first-section-h1 ${isVisible ? "visible" : ""}`}>O que fazemos?</h1>
+                    <h1 ref={h1Ref} className={`first-section-h1 ${isVisible ? "visible" : ""}`}>O QUE FAZEMOS?</h1>
                     <p id="p-margin" className="p-texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna velit. Nunc viverra quam quis orci rhoncus congue. Praesent eget nunc tincidunt lacus pulvinar convallis vel eu eros. Integer feugiat, nunc pretium semper porta, velit mi luctus sem, eget ultricies enim nisi vel velit.</p>
                 </div>
 

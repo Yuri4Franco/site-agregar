@@ -1,0 +1,419 @@
+.section-parceiros {
+  background-image: url("/src/assets/backgrounds/background.png");
+  background-color: var(--background-instituto);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed; /* Mantém o fundo fixo enquanto o conteúdo rola */
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+.section-parceiros-container {
+  width: 87.5rem;
+  justify-self: center;
+  padding: 1.25rem;
+  background-color: rgb(255, 255, 255);
+  border: 8px solid;
+  border-image-source: linear-gradient(transparent 10%, #0000ff 80%);
+  border-image-slice: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.163), 0 0 0.625rem rgba(0, 0, 0, 0.097),
+    0 0 1.25rem rgba(0, 0, 0, 0.136);
+}
+
+.section-parceiros-container h1 {
+  width: max-content;
+  padding-right: 1.875rem;
+  text-align: start;
+  font-size: 1.5rem;
+  font-family: "poppins";
+  color: rgb(0, 0, 0);
+}
+
+.h1-background {
+  background-image: linear-gradient(
+    transparent 50%,
+    transparent 90%,
+    blue 85%,
+    blue 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 2s cubic-bezier(0.5, 0.04, 0.3, 1);
+}
+
+.sobre-parceiros,
+.segmentos-parceiros,
+.produtos-parceiros,
+.contato-parceiros {
+  margin-bottom: 1.25rem;
+}
+
+.h1-background.visible {
+  background-size: 100% 100%;
+}
+.titulo-logo-parceiros {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: 15.625rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.titulo-logo-parceiros h1 {
+  font-family: "poppins";
+  font-size: 3.75rem;
+  justify-self: center;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0;
+}
+
+.titulo-logo-parceiros h2 {
+  justify-self: center;
+  text-align: center;
+  font-family: "poppins";
+  font-size: 2.188rem;
+  line-height: 1;
+}
+
+.titulo-logo-parceiros h3 {
+  justify-self: center;
+  font-family: "poppins";
+  font-size: 1.25rem;
+
+  opacity: 0.7;
+}
+
+.parceiros-social {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.parceiros-social .social-icons {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.parceiros-social .social-icons .social-buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: 1px solid var(--background-instituto);
+  border-radius: 3.125rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+
+.parceiros-social .social-icons .social-buttons .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.563rem;
+  color: white;
+  border-radius: 3.125rem;
+  background-color: var(--background-instituto);
+}
+
+.parceiros-social .social-icons .social-buttons span {
+  display: none;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  line-height: 3.125rem;
+  transition: all 0s ease-out;
+}
+
+.parceiros-social .social-icons .social-buttons:hover {
+  width: 8.75rem;
+  background-color: blue;
+  border: 1px solid blue;
+}
+
+.parceiros-social .social-icons .social-buttons:hover span {
+  display: flex;
+  transition: all 0.3s ease-out;
+}
+
+.parceiros-social .social-icons .social-buttons:hover .icon {
+  color: white;
+  display: flex;
+  justify-content: start;
+  background-color: blue;
+}
+
+.sobre-parceiros {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 0.625rem;
+}
+
+.section-parceiros-container p {
+  text-align: justify;
+  padding: 0.625rem;
+  font-size: 1rem;
+  font-family: "poppins";
+}
+
+.section-parceiros-container ul {
+  text-align: justify;
+  list-style-type: none;
+  font-size: 1rem;
+  font-family: "poppins";
+}
+
+.section-parceiros-container li {
+  text-align: justify;
+  padding: 0.625rem;
+  list-style-type: none;
+  font-size: 1rem;
+  font-family: "poppins";
+}
+
+.sede-imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sede-imagens img {
+  height: auto;
+  width: 80%;
+}
+
+.galeria-produtos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.descricao-produtos ul {
+  text-align: justify;
+  list-style-type: none;
+  font-size: 1rem;
+  font-family: "poppins";
+}
+
+.produtos-parceiros h1 {
+  margin-bottom: 1.25rem;
+}
+
+.galeria-produtos img {
+  display: block;
+  height: auto;
+  width: 21.875rem;
+  border-radius: 1.25rem;
+}
+
+.produto-item {
+  position: relative;
+  display: inline-block;
+  width: 21.875rem;
+  /* Para evitar que elementos absolutos fiquem "fora" */
+}
+
+.produto-item .produto-titulo {
+  position: absolute;
+  display: flex;
+  text-justify: center;
+  bottom: 0; /* Coloca o título no final da imagem */
+  width: 100%; /* Faz o título ocupar toda a largura */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adiciona um fundo escuro para legibilidade */ /* Cor do texto */
+  border-bottom-left-radius: 1.25rem; /* Ajusta para combinar com a borda da imagem */
+  border-bottom-right-radius: 1.25rem;
+  backdrop-filter: blur(0.625rem);
+  height: 3.75rem;
+}
+
+.produto-item .produto-titulo h1 {
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  color: white;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1; /* Mantém o CTA acima do background */
+}
+
+.produtos-parceiros a {
+  text-decoration: none;
+  color: black;
+}
+
+.produtos-parceiros a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+#info-adicional {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.cta h1 {
+  color: white;
+  font-size: 2.125rem;
+  text-align: center;
+  padding: 0;
+}
+
+.cta p {
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.cta-container {
+  position: relative;
+  margin: 0;
+  background-image: url("../../assets/backgrounds/background-corp.jpg");
+  background-size: cover;
+  background-color: var(--background-instituto);
+  background-blend-mode: multiply;
+  display: inline-block;
+  justify-items: center;
+  padding: 3.125rem;
+  width: 75rem;
+  border-radius: 2.5rem;
+  margin-top: 3.125rem;
+  margin-bottom: 1.875rem;
+}
+
+.cta-container::after,
+.cta-container::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  padding: 3px;
+  border-radius: 2.5rem;
+  animation: spin 3s linear infinite;
+}
+
+#cta-smartphones {
+  display: none;
+}
+
+.cta-container::after {
+  background-image: conic-gradient(from var(--angulo1), transparent 50%, blue);
+}
+
+.cta-container::before {
+  background-image: conic-gradient(from var(--angulo2), transparent 50%, blue);
+}
+
+/* Criando duas propriedades diferentes */
+@property --angulo1 {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --angulo2 {
+  syntax: "<angle>";
+  initial-value: 180deg;
+  inherits: false;
+}
+
+/* Animando os dois ângulos separadamente */
+@keyframes spin {
+  from {
+    --angulo1: 0deg;
+    --angulo2: 180deg;
+  }
+  to {
+    --angulo1: 360deg;
+    --angulo2: 540deg;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-parceiros-container {
+    width: 22.5rem;
+  }
+  .section-parceiros li {
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .titulo-logo-parceiros {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .titulo-logo-parceiros .logo-empresa {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .sobre-parceiros {
+    display: inline-block;
+  }
+  .titulo-logo-parceiros,
+  .sobre-parceiros,
+  .segmentos-parceiros,
+  .produtos-parceiros,
+  .contato-parceiros {
+    width: 100%;
+  }
+
+  .produto-item {
+    width: 300px;
+  }
+
+  .galeria-produtos .imagem-produto {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta {
+    width: 300px;
+  }
+
+  .cta-container {
+    width: 100%;
+  }
+
+  .cta-container p {
+    display: none;
+  }
+
+  #cta-smartphones {
+    display: block;
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}

@@ -6,10 +6,10 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 function HeroSection() {
     const [palavras] = useTypewriter({
-        words: ['inovação', 'transformação', 'conexão'],
+        words: ['INOVAÇÃO', 'TRANSFORMAÇÃO', 'CONEXÃO', 'COLABORAÇÃO', 'SENSIBILIZAÇÃO', 'TECNOLOGIA'],
         loop:{},
-        typeSpeed:120,
-        deleteSpeed:80
+        typeSpeed:50,
+        deleteSpeed:25
 
     });
 

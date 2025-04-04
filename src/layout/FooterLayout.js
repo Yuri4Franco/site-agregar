@@ -1,6 +1,7 @@
 import Logo from "../assets/logo/logo-agregar-marca1.png";
 import "./FooterLayout.css";
 import { TbPhoneFilled, TbMailFilled, TbLocationFilled, TbBrandLinkedinFilled, TbBrandInstagramFilled, TbBrandYoutubeFilled } from "react-icons/tb";
+import NavMenu from "./NavMenu"; // Importando o menu reutilizável
 
 function FooterLayout() {
     return (
@@ -39,16 +40,7 @@ function FooterLayout() {
             </div>
 
             <div className="footer-menu">
-                <nav className="nav-menu-footer">
-                    <h4>MENU</h4>
-                    <a className="item-menu" href="/">INICIO</a>
-                    <a className="item-menu" href="/blog">BLOG</a>
-                    <a className="item-menu" href="/blog">AGENDA</a>
-                    <a className="item-menu" href="/sobre">SOBRE NÓS</a>
-                    <a className="item-menu" href="/mantenedores">PARCEIROS</a>
-                    <a className="item-menu" href="/contato">CONTATO</a>
-                    <a className="item-menu" href="/contato">FAÇA PARTE</a>
-                </nav>
+                <NavMenu isFooter={true} /> {/* Menu reutilizável com prop específica para o footer */}
             </div>
 
             <div className="footer-informacoes">
@@ -73,6 +65,6 @@ function FooterLayout() {
             </div>
         </footer>
     );
-}   
+}
 
 export default FooterLayout;

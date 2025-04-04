@@ -1,50 +1,67 @@
 import ButtonBlue from "../buttons/ButtonBlue";
 import { useEffect, useState, useRef } from "react";
 import "./SecondSection.css";
+import ButtonBlack from "../buttons/ButtonBlack";
+import Divisor1 from "../divisor/Divisor1";
+import Divisor2 from "../divisor/Divisor2";
 
 
 function SecondSection() {
 
-    const [isVisible, setIsVisible] = useState(false);
-        const h1Ref = useRef(null);
-    
-        useEffect(() => {
-            const observer = new IntersectionObserver(
-                ([entry]) => {
+    const h1Refs = useRef([]);
+    const [visibleStates, setVisibleStates] = useState({});
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        setIsVisible(true);
-                        observer.unobserve(entry.target); 
+                        setVisibleStates(prevState => ({
+                            ...prevState,
+                            [entry.target.dataset.id]: true
+                        }));
+                        observer.unobserve(entry.target);
                     }
-                },
-                { threshold: 1.0 }
-            );
-    
-            if (h1Ref.current) {
-                observer.observe(h1Ref.current);
-            }
-    
-            return () => observer.disconnect();
-        }, []);
-    
+                });
+            },
+            { threshold: 1.0 }
+        );
+
+        h1Refs.current.forEach((ref) => {
+            if (ref) observer.observe(ref);
+        });
+
+        return () => observer.disconnect();
+    }, []);
+
 
     return (
         <>
-        <div className="divisor-1"></div>
-        <div className="second-section-container">
-                
-            <div className="second-section-container-title" >
-                    <h1 id="second-section-sobre"> Sobre o  <span ref={h1Ref} className={`title-decoration ${isVisible ? "visible" : ""}`}>Instituto<span id="break">Agregar</span></span></h1>
-                <div id="button-saiba-mais"><ButtonBlue ButtonText="SAIBA MAIS"></ButtonBlue></div>
+            <Divisor1 className="divisor"></Divisor1>
+            <div className="second-section-container">
+
+                <div className="second-section-container-title" >
+                    <h1 id="second-section-sobre">SOBRE O</h1> <h1>INSTITUTO</h1><h1>AGREGAR</h1>
+                    <div id="button-saiba-mais-desktop"><ButtonBlue ButtonText="SAIBA MAIS" /></div>
+                </div>
+                <div>
+                    <div
+                        ref={el => h1Refs.current[0] = el}
+                        data-id="div1"
+                        className={`background-effect-1 ${visibleStates["div1"] ? "visible" : ""}`}>
+                    </div>
+                    <p className="p-texto">Instituto Agregar é um hub de inovação sem fins lucrativos que atua para fortalecer o desenvolvimento da região Noroeste do Rio Grande do Sul. Acreditamos no potencial das pessoas, das empresas e do território como motores de transformação.</p>
+                    <p className="p-texto">Conectamos talentos, empreendedores e organizações por meio de programas de capacitação, experiências práticas e suporte a projetos inovadores. Nosso papel é criar pontes entre o presente e o futuro, estimulando soluções sustentáveis, tecnológicas e colaborativas.</p>
+                    <p className="p-texto">Trabalhamos lado a lado com empresas, especialistas e instituições de ensino para gerar impacto real e positivo em toda a região.</p>
+                    <div id="button-saiba-mais-mobile"><ButtonBlue ButtonText="SAIBA MAIS" /></div>
+                    <div
+                        ref={el => h1Refs.current[1] = el}
+                        data-id="div2"
+                        className={`background-effect-2 ${visibleStates["div2"] ? "visible" : ""}`}>
+                    </div>
+                </div>
             </div>
-            <div className="second-section-container-text"><p className="p-texto"> O Instituto Agregar é um hub de Inovação sem fins lucrativos que busca o desenvolvimento regional do 
-                interior do Rio Grande do Sul. Acreditamos no potencial dos talentos locais e na inovação como caminho
-                para o crescimento econômico e social. Por meio de capacitação e suporte a projetos inovadores, nosso 
-                objetivo é conectar empresas, empreendedores e investidores para impulsionar a região como um todo. 
-                Trabalhamos em parceria com grandes executivos, especialistas em negócios e
-                instituições de ensino renomadas para oferecer soluções personalizadas e de alto impacto.
-            </p>
-            </div>
-        </div>
+            <Divisor2 className="divisor"></Divisor2>
         </>
     );
 }

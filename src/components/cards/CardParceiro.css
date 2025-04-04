@@ -1,13 +1,17 @@
 .card-parceiro-container {
-  width: 200px;
+  width: 150px;
   padding: 10px;
   display: grid;
   grid-template-rows: 10% 90%;
   justify-content: center;
-  height: 200px;
+  height: 150px;
   background-color: white;
   border-radius: 30px;
   transition: background-color 0.3s ease;
+}
+.card-parceiro-link {
+  text-decoration: none; /* Remove sublinhado */
+  color: inherit; /* Mantém a cor original */
 }
 
 .card-parceiro-title {
@@ -26,24 +30,24 @@
 }
 
 .card-parceiro-container:hover .card-parceiro-title {
-  color: white; /* Muda a cor do texto */  
+  color: white; /* Muda a cor do texto */
 }
-
 
 .card-logo {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 130px;
+  height: 130px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center
 }
 
 .card-parceiro-logo-normal,
 .card-parceiro-logo-white {
   position: absolute;
-  width: 180px;
+  width: 100%;
   height: auto;
+
   transition: opacity 0.3s ease;
 }
 

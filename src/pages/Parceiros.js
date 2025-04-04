@@ -1,17 +1,13 @@
-import SectionParceiros from "../components/parceiros/SectionParceiros";
-import mantenedores from "../components/config/mantenedores";
 import "./Parceiros.css"
+import HeaderLayout from "../layout/HeaderLayout";
+import FooterLayout from "../layout/FooterLayout";
 function Parceiros() {
     return (
         <>
-            <h1>Parceiros</h1>
-            <div className="parceiros-container">
-            {mantenedores.map((parceiro, index) => (
-                <SectionParceiros key={index} {...parceiro} ></SectionParceiros>
-            ))}
-            </div>
+        <HeaderLayout></HeaderLayout>
+        <FooterLayout></FooterLayout>
         </>
     );
 }
 
-export default Parceiros    
+export default Parceiros;

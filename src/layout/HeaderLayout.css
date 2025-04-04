@@ -4,17 +4,15 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 5.625rem;
+  min-height: 5.625rem;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.2);
   justify-content: space-between;
-  z-index: 1;
+  z-index: 2;
 }
 
-.header-azul {
-  background-color: #0a2770;
-}
 .logo-agregar-container {
   align-items: center;
   height: 100%;
@@ -26,45 +24,14 @@
 .logo-agregar-header {
   height: 80%;
   width: auto;
-  max-width: 180px;
+  min-width: 180px;
+  max-height: 80%;
 }
-
-.nav-menu {
-  display: flex;
-  gap: 30px;
-  margin-right: 10%;
-  justify-content: flex-end;
-}
-
-.item-menu {
-  color: white;
-  font-family: "poppins";
-  font-size: 16px;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.item-menu:hover {
-  color: #0fb6ee;
-  transform: translateY(-3px);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.item-menu:focus-visible {
-  outline: 3px solid #0fb6ee;
-  outline-offset: 4px;
-  color: #0fb6ee;
-  transform: translateY(-3px);
-}
-
 .toggle-menu {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: none;
-}
-#checkbox {
-  display: none;
+  display: relative;
 }
 
 .toggle {
@@ -78,6 +45,10 @@
   cursor: pointer;
   gap: 10px;
   transition-duration: 0.5s;
+}
+
+#checkbox {
+  display: none;
 }
 
 .bars {
@@ -123,29 +94,3 @@
   transition-duration: 0.5s;
 }
 
-/* Para telas menores (mobile) */
-@media (max-width: 1024px) {
-  .header {
-    height: 70px;
-  }
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    background-color: #0a2770;
-    padding: 20px;
-  }
-
-  .nav-menu.open {
-    display: flex;
-  }
-
-  .toggle-menu {
-    display: flex;
-    margin-right: 5%;
-  }
-}

@@ -1,63 +1,61 @@
-/* Footer Container */
 .footer {
   width: 100vw;
-  height: 50vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 40px;
-  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 10%, #0a2770 100%);
-  box-shadow: inset 0 2px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer Hero */
-.footer-hero {
-  text-align: center;
-}
-
-.logo-agregar-footer {
+  min-height: 48rem;
+  height: 100%;
+  min-height: auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 10%, #0a2770 100%);
+  box-shadow: 0 -2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-hero {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  margin-bottom: 3.125rem;
 }
 
 #logo-agregar-footer {
   width: auto;
-  height: 120px;
+  height: 7.5rem;
 }
 
 .frase-footer {
-  padding: 10px;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  font-family: "poppins";
   color: white;
   display: inline-block;
-  width: 100%;
+  text-align: center;
 }
 
 /* Footer Social */
 .footer-social {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .social-icons {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .social-icons .social-buttons {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: transparent;
   border: 1px solid white;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-out;
   text-decoration: none;
@@ -67,42 +65,26 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  font-size: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.563rem;
   color: #ffffff;
-  border-radius: 50px;
+  border-radius: 3.125rem;
 }
 
 .social-icons .social-buttons span {
   display: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: white;
-  line-height: 50px;
+  line-height: 3.125rem;
   transition: all 0s ease-out;
-}
-
-.social-icons .social-buttons:hover {
-  width: 140px;
-  background-color: blue;
-  box-shadow: 0 0 15px blue, 0 0 10px blue, 0 0 20px blue;
-}
-
-.social-icons .social-buttons:hover span {
-  display: flex;
-  transition: all 0.3s ease-out;
-}
-
-.social-icons .social-buttons:hover .icon {
-  color: white;
-  display: flex;
-  justify-content: start;
 }
 
 /* Footer Menu */
 .footer-menu {
+  margin-bottom: 60px;
 }
 
 .footer-menu h4 {
@@ -130,12 +112,12 @@
     rgba(0, 61, 255, 0.7702730750503326) 50%,
     rgba(0, 72, 255, 1) 100%
   );
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .nav-menu-footer {
   display: grid;
-  grid-template-columns: repeat(2, 100px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   justify-content: center;
   justify-items: start;
@@ -182,17 +164,46 @@
 }
 
 .footer-copyright {
-  grid-column: 1 / -1;
   justify-items: center;
-  margin-top: 40px;
+  margin-top: 10px;
   opacity: 0.3;
   border-top: #ffffff 1px solid;
 }
 
-.footer-copyright p{
+.footer-copyright p {
+  margin-top: 10px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: white;
-  line-height: 1.4;
+  line-height: 1;
   text-align: center;
+}
+
+/* Adaptação para Desktops */
+@media (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-copyright {
+    grid-column: 1 / -1;
+  }
+
+  .social-icons .social-buttons:hover {
+    width: 8.75rem;
+    background-color: blue;
+    box-shadow: 0 0 15px blue, 0 0 10px blue, 0 0 20px blue;
+  }
+
+  .social-icons .social-buttons:hover span {
+    display: flex;
+    transition: all 0.3s ease-out;
+  }
+
+  .social-icons .social-buttons:hover .icon {
+    color: white;
+    display: flex;
+    justify-content: start;
+  }
 }

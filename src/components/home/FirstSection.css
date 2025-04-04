@@ -1,43 +1,35 @@
+/* Mobile First: Padrão para telas menores */
 .first-section-container {
   display: grid;
-  gap: 2.5rem;
-  grid-template-columns: 21.875rem repeat(3, 12.5rem);
-  grid-column: auto;
-  justify-items: center;
+  gap: 1.5rem;
+  grid-template-columns: 1fr; /* Mobile: Apenas uma coluna */
   justify-content: center;
-  height: 80vh;
+  width: 100%;
+  padding: 1.5rem;
   align-items: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 70%,
-    #0a2770 100%
-  );
+}
+
+.first-section-container-text-h1,
+.first-section-container-text-h2 {
+  padding: 0.625rem;
+  width: 100%;
+  max-width: 18.75rem;
+  border-left: 0.188rem solid blue;
 }
 
 .first-section-container-text-h1 {
-  padding: 0.625rem;
-  justify-items: start;
-  height: 18.75rem;
-  max-width: 18.75rem;
-  border-left: 0.188rem solid blue;
-;
+  height: auto;
 }
 
 .first-section-container-text-h2 {
-  padding: 0.625rem;
-  justify-items: start;
-  height: 12.5rem;
-  max-height: 18.75rem;
-  max-width: 18.75rem;
-  border-left: 0.188rem solid blue;
+  height: auto;
 }
 
 .first-section-h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.8rem; /* Tamanho menor para mobile */
   color: white;
-  line-height: 0.8;
+  line-height: 1;
   background-image: linear-gradient(
     transparent 50%,
     blue 50%,
@@ -54,35 +46,28 @@
   background-size: 100% 100%;
 }
 
-#p-margin{
-   margin-top: 0.938rem;
+#p-margin {
+  margin-top: 0.938rem;
 }
 
-@media (max-width: 1024px) {
+/* Telas maiores: Ajuste para desktop */
+@media (min-width: 1024px) {
   .first-section-container {
-    padding-top: 0.625rem;
     gap: 2.5rem;
-    grid-template-columns: 1fr;
-    grid-column: auto;
-    height: 60vh;
-    width: 100%;
-    align-items: center;
+    grid-template-columns: 21.875rem repeat(3, 12.5rem); /* Volta ao layout desktop */
+    height: 350px;
   }
 
   .first-section-container-text-h1 {
-    padding: 0.625rem;
-    justify-items: start;
-    height: 80%;
-    width: 100%;
-    border-left: 0.188rem solid blue;
+    height: 18.75rem;
   }
 
   .first-section-container-text-h2 {
-    padding: 0.625rem;
-    justify-items: start;
     height: 12.5rem;
     max-height: 18.75rem;
-    max-width: 18.75rem;
-    border-left: 0.188rem solid blue;
+  }
+
+  .first-section-h1 {
+    font-size: 2.5rem; /* Aumenta o tamanho da fonte */
   }
 }
