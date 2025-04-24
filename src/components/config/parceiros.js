@@ -172,7 +172,7 @@ const parceiros = [
         email: "secretaria.gabinete@panambi.rs.gov.br",
         sobre: [
             "A Prefeitura Municipal de Panambi atua como agente público essencial na promoção do desenvolvimento social, econômico e cultural do município. Comprometida com a construção de políticas públicas eficazes e com o fortalecimento de iniciativas voltadas ao bem-estar da população, a gestão municipal tem investido em parcerias estratégicas que impulsionam a inovação e o empreendedorismo local.",
-            "Sendo uma das mantenedoras do Instituto Agregar, a Prefeitura Municipal de Panambi atua colaborando ativamente para a consolidação de um ambiente favorável à inovação e à geração de oportunidades. Por meio dessa parceria, contribui com a articulação entre o poder público e a sociedade civil, criando pontes para que ideias transformadoras possam sair do papel e gerar impacto real na comunidade."
+            "Sendo uma das mantenedoras do Instituto Agregar, a Prefeitura Municipal de Panambi atua colaborando para a consolidação de um ambiente favorável à inovação e à geração de oportunidades. Por meio dessa parceria, contribui com a articulação entre o poder público e a sociedade civil, criando pontes para que ideias transformadoras possam sair do papel e gerar impacto real na comunidade."
         ],
         items: [],
         segmentos: [

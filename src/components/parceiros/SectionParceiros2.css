@@ -181,7 +181,7 @@
   height: auto;
 }
 .imagem-sede {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -332,6 +332,10 @@
   .sobre-parceiros {
     display: grid;
     grid-template-columns: 60% 40%;
+  }
+
+  .sobre-parceiros.sem-sede {
+    grid-template-columns: 100%;
   }
 
   .sede-imagens {

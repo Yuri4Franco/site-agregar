@@ -1,5 +1,9 @@
 /* Definições da area PRODUTOS do Parceiro - INICIO */
 
+.galeria-produtos{
+  padding-top: 15px;
+}
+
 .produtos-parceiros {
   width: 100%;
   display: inline-block;

@@ -80,7 +80,7 @@ function SectionParceiros2() {
                         </div>
                     </div>
 
-                    <div className="sobre-parceiros">
+                    <div className={`sobre-parceiros ${parceiro.sede.length === 0 ? "sem-sede" : ""}`}>
                         <div>
                             <h1
                                 ref={el => h1Refs.current[0] = el}
@@ -100,11 +100,13 @@ function SectionParceiros2() {
                                 ))}
                             </div>
                         </div>
-                        <div className="sede-imagens">
-                            {parceiro.sede.map((imagem, index) => (
-                                <img key={index} src={imagem.imagem} alt={imagem.alt} className="imagem-sede" />
-                            ))}
-                        </div>
+                        {parceiro.sede.length > 0 && (
+                            <div className="sede-imagens">
+                                {parceiro.sede.map((imagem, index) => (
+                                    <img key={index} src={imagem.imagem} alt={imagem.alt} className="imagem-sede" />
+                                ))}
+                            </div>
+                        )}
                     </div>
 
                     <div className="segmentos-parceiros">
