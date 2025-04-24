@@ -14,7 +14,7 @@ function HeaderLayout() {
     return (
         <header className="header">
             <div className="logo-agregar-container">
-                <img className="logo-agregar-header" src={Logo} alt="Instituto Agregar" />
+                <a href="/" alt><img className="logo-agregar-header" src={Logo} alt="Instituto Agregar" /></a>
             </div>
             <div className="toggle-menu">
                 <input
