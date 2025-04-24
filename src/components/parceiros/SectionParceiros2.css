@@ -179,6 +179,8 @@
 .sobre-parceiros .sede-imagens {
   width: 100%;
   height: auto;
+  display: inline-flex;
+  justify-content: center;
 }
 .imagem-sede {
   width: 90%;
