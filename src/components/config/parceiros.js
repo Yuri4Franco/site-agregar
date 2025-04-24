@@ -1,5 +1,3 @@
-import { ImInstagram } from "react-icons/im";
-
 const parceiros = [
     {
         nome: "ACI",
@@ -44,7 +42,7 @@ const parceiros = [
         produtosDescricao: [],
         produtos: [],
         sede: [],
-     },
+    },
     {
         nome: "Cotripal",
         categoria: "mantenedor",
@@ -77,22 +75,63 @@ const parceiros = [
         linkedin: "https://www.linkedin.com/company/grupo-fockink/",
         website: "https://fockink.ind.br/",
         descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
+        logo: require("../../assets/logo/logo-fockink-650x364.png"),
+        slogan: "Gerando Soluções e Integrando Tecnologias",
+        telefone: "(55) 3375-9500",
+        endereco: "Av. Pres. Kennedy, 3312 - Arco-Íris, Panambi - RS, 98280-000",
+        email: "astec@fockink.ind.br",
         sobre: [
-            "A trajetória da Fockink iniciou no ano de 1947 com uma pequena oficina de rebobinagem e conserto de motores elétricos, sempre comprometida com a excelência dos serviços prestados, preserva ao longo de seus mais de 77 anos a mesma ideologia de seu fundador, Alfredo Arnaldo Fockink, de que “a melhor propaganda é o serviço”.",
-            "Uma empresa familiar e 100% brasileira, sólida e bem estruturada que se tornou referência nos segmentos em que atua.",
-            "Gerando soluções e integrando tecnologias a Fockink desenvolve Sistemas de Irrigação, Sistemas de Geração Fotovoltaica, Sistemas de Termometria e Aeração, Biogás, Subestações, Painéis Elétricos e Automação, Instalações Eletromecânicas e Painéis e Caixas Metálicas Vazias.",
-            "Nossa missão é entregar aos nossos clientes soluções de forma sustentável e íntegra, respeitando o meio ambiente, a qualidade dos nossos produtos e serviços e não comprometendo a segurança das pessoas, nossa visão é ser referência nacional, sempre com foco em inovação, gerando soluções e integrando tecnologias e nossos valores são Segurança, Qualidade, Respeito, Integridade e Profissionalismo."
+            "A trajetória da Fockink começou em 1947, com uma pequena oficina de rebobinagem e conserto de motores elétricos. Desde o início, a empresa manteve o compromisso com a excelência nos serviços prestados e, ao longo de mais de 77 anos, preserva a ideologia de seu fundador, Alfredo Arnaldo Fockink: “a melhor propaganda é o serviço”.",
+            "Empresa familiar, 100% brasileira, sólida e bem estruturada, a Fockink tornou-se referência nos segmentos em que atua.",
+            "Gerando soluções e integrando tecnologias, a Fockink desenvolve Sistemas de Irrigação, Sistemas de Geração Fotovoltaica, Sistemas de Termometria e Aeração, Biogás, Subestações, Painéis Elétricos e de Automação, Instalações Eletromecânicas e Painéis e Caixas Metálicas Vazias.",
+            "Nossa missão é entregar soluções de forma sustentável e íntegra, respeitando o meio ambiente, garantindo a qualidade de nossos produtos e serviços e assegurando a segurança das pessoas. Nossa visão é ser referência nacional em inovação, sempre gerando soluções e integrando tecnologias. Nossos valores são: Segurança, Qualidade, Respeito, Integridade e Profissionalismo."
         ],
         items: [],
-        segmentos: [{texto: "Agro e Industrias."}],
-        produtosDescricao: [],
-        produtos: [],
-        sede: [],
+        segmentos: [{ texto: "Agro e Industrias." }],
+        produtosDescricao: [
+            {
+                titulo: "Termometria e Aeração:",
+                descricao: "Combinando as tecnologias de sensoriamento termopar e digital com o controle de aeração, temos um sistema híbrido em uma única plataforma que proporciona um melhor gerenciamento do cereal armazenado."
+            },
+            {
+                titulo: "Painéis Elétricos e Automação:",
+                descricao: "Concepção, projeto, desenvolvimento e montagem de painéis elétricos de controle, proteção e distribuição para diversos segmentos industriais e agroindustriais."
+            },
+            {
+                titulo: "Instalações Eletromecânicas:",
+                descricao: "Oferecemos as melhores soluções em engenharia para projetos e instalações eletromecânicas, com foco em eficiência e segurança."
+            },
+            {
+                titulo: "Subestações de Energia:",
+                descricao: "Equipe especializada em projetos executivos, instalação e montagem, gerenciamento de obras, comissionamento e treinamento para subestações, com experiência em classes de tensão de 13,8kV a 230kV, inclusive no modelo turn-key."
+            },
+            {
+                titulo: "Energia Fotovoltaica:",
+                descricao: "A mais completa solução em energia solar sustentável, de baixo custo e alta performance energética, voltada para propriedades rurais, agronegócios, indústrias e comércios."
+            },
+            {
+                titulo: "Caixas Vazias:",
+                descricao: "Projeto e fabricação de painéis vazios para diversas aplicações nos mais variados segmentos de mercado."
+            },
+            {
+                titulo: "Fockink IoT:",
+                descricao: "Acesso aos seus equipamentos e processos de forma centralizada e na palma da sua mão, quando e onde você quiser."
+            }
+        ],
+        produtos: [
+            { imagem: require("../../assets/produtos/FOCKINK-1.png"), titulo: "Irrigação" },
+            { imagem: require("../../assets/produtos/FOCKINK-2.png"), titulo: "Termometria e Aeração" },
+            { imagem: require("../../assets/produtos/FOCKINK-3.png"), titulo: "Painéis Elétricos e Automação de Processos" },
+            { imagem: require("../../assets/produtos/FOCKINK-4.png"), titulo: "Instalações Elétricas" },
+            { imagem: require("../../assets/produtos/FOCKINK-5.png"), titulo: "Energia Fotovoltaica" },
+            { imagem: require("../../assets/produtos/FOCKINK-6.png"), titulo: "Subestações" },
+            { imagem: require("../../assets/produtos/FOCKINK-7.png"), titulo: "Fockink IoT" },
+
+
+        ],
+        sede: [
+            { imagem: require("../../assets/sedes/FOCKINK-SEDE.png"), alt: "Sede da Fockink" },
+        ],
     },
     {
         nome: "KeplerWeber",
@@ -128,13 +167,27 @@ const parceiros = [
         descricao: "",
         logo: "",
         slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
+        telefone: "(55) 3376-9100",
+        endereco: "R. Konrad Adenauer, 1870 - São Jorge, Panambi - RS, 98280-000",
+        email: "secretaria.gabinete@panambi.rs.gov.br",
+        sobre: [
+            "A Prefeitura Municipal de Panambi atua como agente público essencial na promoção do desenvolvimento social, econômico e cultural do município. Comprometida com a construção de políticas públicas eficazes e com o fortalecimento de iniciativas voltadas ao bem-estar da população, a gestão municipal tem investido em parcerias estratégicas que impulsionam a inovação e o empreendedorismo local.",
+            "Sendo uma das mantenedoras do Instituto Agregar, a Prefeitura Municipal de Panambi atua colaborando ativamente para a consolidação de um ambiente favorável à inovação e à geração de oportunidades. Por meio dessa parceria, contribui com a articulação entre o poder público e a sociedade civil, criando pontes para que ideias transformadoras possam sair do papel e gerar impacto real na comunidade."
+        ],
         items: [],
-        segmentos: [],
-        produtosDescricao: [],
+        segmentos: [
+            { titulo: "", texto: "Administração pública, com foco em desenvolvimento urbano, educação, saúde, inovação e apoio ao ecossistema empreendedor local." }
+        ],
+        produtosDescricao: [
+            {
+                titulo: "Serviços Públicos para a População de Panambi:",
+                descricao: "A Prefeitura de Panambi atua diretamente na oferta de serviços essenciais à população, como educação de qualidade, saúde pública acessível, infraestrutura urbana, mobilidade, cultura e inclusão social. Também promove programas de qualificação profissional, inclusão digital e políticas públicas que visam melhorar a qualidade de vida no município."
+            },
+            {
+                titulo: "Apoio ao Ecossistema de Inovação e ao Instituto Agregar:",
+                descricao: "Como mantenedora do Instituto Agregar, a Prefeitura de Panambi contribui com apoio institucional, articulação intersetorial e políticas públicas que incentivam o empreendedorismo, a inovação tecnológica e o desenvolvimento sustentável. Também disponibiliza espaços públicos, suporte técnico e fomenta parcerias estratégicas voltadas à transformação do ecossistema local de inovação."
+            }
+        ],
         produtos: [],
         sede: [],
     },
@@ -323,18 +376,53 @@ const parceiros = [
         instagram: "https://www.instagram.com/easypro_tecnologia/",
         linkedin: "https://www.linkedin.com/company/easyprotecnologia/",
         website: "https://www.easypro.com.br/",
-        descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
+        logo: require("../../assets/logo/logo-easypro-650x364.png"),
+        slogan: "soluções inovadoras para produtividade, eficiência e qualidade.",
+        telefone: "(51) 98550-8882",
+        endereco: " Alameda da Inovação, 270, Sala 112, Zona Industrial Norte, Campo Bom - RS | Rua Dona Francisca, 8300, CEP 89219-600, Zona Industrial Norte, Joinville – SC | STARTUP LEIRIA - R. Carvalha n.º570, Leiria - Portugal",
+        email: "contato@easypro.com.br",
+        sobre: [
+            "A Easypro Tech é uma empresa especializada no desenvolvimento de soluções tecnológicas voltadas para a otimização da gestão produtiva e o controle inteligente do chão de fábrica. Nosso propósito é transformar processos industriais por meio da automação, análise de dados em tempo real e digitalização de rotinas, entregando mais produtividade, eficiência operacional e qualidade para empresas de todos os segmentos.",
+
+            "Com uma suíte de sistemas modulares e adaptáveis, aliamos softwares inteligentes, sensores de coleta automatizada e a expertise de um time multidisciplinar de especialistas em processos industriais. Nossas soluções foram desenvolvidas para atender às demandas da Indústria 4.0, com foco em usabilidade, agilidade na implementação, redução de desperdícios e aumento da performance. O resultado? Um ambiente de produção mais enxuto, previsível e orientado por dados.",
+
+            "Acreditamos na inovação como pilar estratégico. Por isso, estamos inseridos em ecossistemas de tecnologia e pesquisa que impulsionam o desenvolvimento contínuo de nossas soluções. Nossa sede está localizada no Feevale Techpark, um dos principais polos de inovação do Brasil. Também contamos com operações no Ágora Techpark, em Joinville (SC), e na Startup Leiria, em Portugal — ampliando nossa presença e fortalecendo conexões com centros de excelência em tecnologia e indústria.",
+
+            "Na Easypro Tech, combinamos visão estratégica, domínio técnico e comprometimento com resultados. Mais do que sistemas, entregamos valor por meio da transformação digital aplicada à realidade do chão de fábrica. Estamos prontos para impulsionar o seu negócio rumo a uma operação mais inteligente, integrada e eficiente."
+        ],
         items: [],
-        segmentos: [],
-        produtosDescricao: [],
-        produtos: [],
-        sede: [],
+        segmentos: [
+            { titulo: "", texto: "Soluções de software para automação e gestão da produção industrial." },
+        ],
+        produtosDescricao: [
+            {
+                titulo: "EasyTime:",
+                descricao: "Filma operações e calcula automaticamente os tempos de produção, facilitando a padronização dos processos e identificando oportunidades de melhoria contínua."
+            },
+            {
+                titulo: "EasyVision:",
+                descricao: "Solução para análise de métodos usando Visão Computacional."
+            },
+            {
+                titulo: "EasyControl:",
+                descricao: "Monitora o desempenho das máquinas em tempo real, medindo a eficácia geral dos equipamentos (OEE) e reduzindo paradas não planejadas."
+            },
+            {
+                titulo: "EasyQuality:",
+                descricao: "Coleta dados de qualidade e realiza inspeções digitais, permitindo análises ágeis por meio de dashboards interativos e promovendo decisões mais assertivas."
+            },
+            {
+                titulo: "EasyCheck:",
+                descricao: "Registra auditorias e checklists eletrônicos de forma prática, gerando planos de ação automáticos para correção de não conformidades e melhoria da conformidade operacional."
+            }
+        ],
+        produtos: [
+            { imagem: require("../../assets/produtos/EASYPRO-1.png"), titulo: "" },
+            { imagem: require("../../assets/produtos/EASYPRO-2.png"), titulo: "" },
+        ],
+        sede: [
+            { imagem: require("../../assets/sedes/EASYPRO-SEDE.png"), alt: "Sede da Easypro" }
+        ],
     },
     {
         nome: "Madereira 2 Irmãos",
@@ -356,7 +444,8 @@ const parceiros = [
         segmentos: [],
         produtosDescricao: [],
         produtos: [],
-        sede: [],
+        sede: [
+        ],
     },
     {
         nome: "NBRtec",
@@ -396,18 +485,36 @@ const parceiros = [
         instagram: "https://www.instagram.com/sirrosiot/",
         linkedin: "https://www.linkedin.com/company/sirros-iot",
         website: "https://sirros.io/",
-        descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
+        logo: require("../../assets/logo/logo-sirrosiot-650x364.png"),
+        slogan: "sua indústria rumo ao futuro 4.0.",
+        telefone: "(51) 99529-6403",
+        endereco: "Avenida General Daltro Filho,237 Bairro: Vila Nova, RS - 93520-305",
+        email: "brenda.reis@sirros.net",
+        sobre: [
+            "A Sirros IoT surgiu com propósito claro: Revolucionar a forma como a indústria se conecta aos seus dados. Desde 2016, desenvolvemos soluções inovadoras em Internet das Coisas que ajudam empresas a enxergar sua operação em tempo real, tomar decisões mais rápidas e alcançar novos níveis de eficiência. Combinamos soluções de Telemetria, Geolocalização, IA e Visão Computacional em uma plataforma robusta e amigável. Nosso diferencial está em traduzir tecnologia em soluções práticas e personalizadas, em, um tempo recorde de desenvolvimento.",
+            "Mais do que oferecer tecnologia de ponta, nosso compromisso é com a transformação real dos negócios. Atuamos lado a lado com nossos clientes, entendendo seus desafios e propondo soluções que se integram perfeitamente ao cotidiano operacional. Acreditamos que inovação só faz sentido quando é acessível, aplicável e gera impacto direto nos resultados. Por isso, nossa equipe é formada por profissionais apaixonados por resolver problemas, atentos às novas demandas do mercado e focados em entregar valor de forma contínua. Na Sirros, tecnologia, eficiência e proximidade andam juntas, criando um ecossistema inteligente onde máquinas, pessoas e dados conversam com fluidez, abrindo caminho para uma nova era da indústria conectada."
+        ],
         items: [],
-        segmentos: [],
-        produtosDescricao: [],
+        segmentos: [
+            { titulo: "", texto: "Tecnologia industrial com foco específico em Internet das Coisas (IoT) aplicada à indústria 4.0." }
+        ],
+        produtosDescricao: [
+            {
+                "titulo": "Telemetria Industrial e Eficiência Industrial (Sirros+S1 + MES Sirros):",
+                "descricao": "Solução completa para monitoramento de máquinas, linhas de produção e indicadores em tempo real. Com hardware plug and play e integração via nossa plataforma MES, é possível acompanhar produtividade, consumo energético, status de ativos e paradas não programadas. Ideal para indústrias que buscam digitalizar o chão de fábrica com agilidade e precisão."
+            },
+            {
+                "titulo": "Geolocalização Inteligente de Ativos, Veículos e Pessoas:",
+                "descricao": "Tecnologia robusta para rastreamento e gestão em tempo real de ativos físicos dentro e fora da planta industrial. A solução combina dispositivos compactos e de fácil instalação com a plataforma em nuvem da Sirros, permitindo visualização georreferenciada, alertas de movimentação e histórico de rotas. Mais controle e segurança para sua operação."
+            },
+            {
+                "titulo": "Visão Computacional e Inteligência Artificial:",
+                "descricao": "Soluções baseadas em câmeras inteligentes e algoritmos de IA para automação de inspeções visuais, controle de qualidade, leitura de códigos e detecção de padrões. A Visão Computacional Sirros aumenta a precisão, reduz falhas humanas e melhora a rastreabilidade nos processos produtivos — tudo integrado ao nosso ecossistema digital."
+            }
+
+        ],
         produtos: [],
-        sede: [],
+        sede: [{ imagem: require("../../assets/sedes/SIRROSIOT-SEDE.png"), alt: "Sede da Sirros IoT" }],
     },
     {
         nome: "SKA",

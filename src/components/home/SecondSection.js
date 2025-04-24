@@ -42,7 +42,6 @@ function SecondSection() {
 
                 <div className="second-section-container-title" >
                     <h1 id="second-section-sobre">SOBRE O</h1> <h1>INSTITUTO</h1><h1>AGREGAR</h1>
-                    <div id="button-saiba-mais-desktop"><ButtonBlue ButtonText="SAIBA MAIS" /></div>
                 </div>
                 <div>
                     <div
@@ -53,7 +52,6 @@ function SecondSection() {
                     <p className="p-texto">Instituto Agregar é um hub de inovação sem fins lucrativos que atua para fortalecer o desenvolvimento da região Noroeste do Rio Grande do Sul. Acreditamos no potencial das pessoas, das empresas e do território como motores de transformação.</p>
                     <p className="p-texto">Conectamos talentos, empreendedores e organizações por meio de programas de capacitação, experiências práticas e suporte a projetos inovadores. Nosso papel é criar pontes entre o presente e o futuro, estimulando soluções sustentáveis, tecnológicas e colaborativas.</p>
                     <p className="p-texto">Trabalhamos lado a lado com empresas, especialistas e instituições de ensino para gerar impacto real e positivo em toda a região.</p>
-                    <div id="button-saiba-mais-mobile"><ButtonBlue ButtonText="SAIBA MAIS" /></div>
                     <div
                         ref={el => h1Refs.current[1] = el}
                         data-id="div2"
