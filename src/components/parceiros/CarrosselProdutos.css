@@ -18,7 +18,7 @@
 
 /* Mantém os slides do tamanho certo */
 .swiper-slide-produto {
-  width: auto !important;
+  width: 100% !important;
   display: inline-block;
   flex-shrink: 0;
 }

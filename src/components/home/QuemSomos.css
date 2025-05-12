@@ -1,0 +1,183 @@
+.quem-somos {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/backgrounds/background-test1.png"),
+    linear-gradient(to bottom, var(--background-instituto), black);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: #445df9 5px solid;
+}
+
+.quem-somos .conteudo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.quem-somos h1 {
+  line-height: 0.8;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #445df9, #49d7ff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+.quem-somos h2,
+.quem-somos h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.quem-somos h3 {
+  text-align: center;
+}
+
+.quem-somos p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-top: 15px;
+  color: white;
+  text-align: justify;
+  margin-top: 0.938rem;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  z-index: 1;
+}
+
+.beneficios-cta {
+  position: relative;
+  background-image: url("../../assets/backgrounds/background-corp.jpg");
+  background-size: cover;
+  background-color: var(--background-instituto);
+  background-blend-mode: multiply;
+  background-position: center;
+  border-radius: 2.5rem;
+  margin-top: 30px;
+  align-self: center;
+  padding: 20px;
+}
+
+.beneficios ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-top: 15px;
+  margin-left: 20px;
+  list-style: none;
+  color: white;
+  text-align: center;
+}
+
+.beneficios li {
+  margin-top: 10px;
+}
+
+.beneficios-icons {
+  color: #445df9;
+}
+
+.beneficios-cta::after,
+.beneficios-cta::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  padding: 5px;
+  border-radius: 2.5rem;
+  animation: spin 3s linear infinite;
+  z-index: -1;
+}
+
+.beneficios-cta::after {
+  background-image: conic-gradient(
+    from var(--angulo1),
+    transparent 50%,
+    #445df9
+  );
+}
+
+.beneficios-cta::before {
+  background-image: conic-gradient(
+    from var(--angulo2),
+    transparent 50%,
+    #445df9
+  );
+}
+
+.button-container {
+  margin-top: 20px;
+  justify-self: center;
+}
+
+/* Criando duas propriedades diferentes */
+@property --angulo1 {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --angulo2 {
+  syntax: "<angle>";
+  initial-value: 180deg;
+  inherits: false;
+}
+
+/* Animando os dois ângulos separadamente */
+@keyframes spin {
+  from {
+    --angulo1: 0deg;
+    --angulo2: 180deg;
+  }
+  to {
+    --angulo1: 360deg;
+    --angulo2: 540deg;
+  }
+}
+
+@media (min-width: 1024px) {
+  .quem-somos {
+    padding: 5rem;
+  }
+
+  .quem-somos .conteudo {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    z-index: 1;
+  }
+
+  .beneficios ul {
+    text-align: left;
+  }
+}

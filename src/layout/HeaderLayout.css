@@ -8,11 +8,17 @@
   min-height: 5.625rem;
   display: flex;
   align-items: center;
+  align-content: center;
   box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.2);
   justify-content: space-between;
   z-index: 2;
 }
 
+.logo-agregar-container a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 
 .logo-agregar-container {
   height: 100%;
@@ -22,7 +28,9 @@
 .logo-agregar-header {
   width: auto;
   max-height: 80%;
+  display: block;
 }
+
 .toggle-menu {
   margin: 0;
   padding: 0;
@@ -89,4 +97,3 @@
   transform: rotate(180deg);
   transition-duration: 0.5s;
 }
-

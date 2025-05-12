@@ -92,10 +92,27 @@ function SectionParceiros2() {
                             {parceiro.sobre.map((paragrafo, index) => (
                                 <p key={index}>{paragrafo}</p>
                             ))}
+
                             <div className="items-texto">
                                 {parceiro.items.map((item, index) => (
                                     <div key={index} className="item-box">
-                                        <p><strong>{item.titulo}: </strong>{item.texto}</p>
+                                        {/* Item principal */}
+                                        <p>
+                                            <strong>{item.titulo}: </strong>
+                                            {item.texto}
+                                        </p>
+
+                                        {/* Sub-itens (se existirem) */}
+                                        {item.subitens?.length > 0 && (
+                                            <ul className="subitem-list">
+                                                {item.subitens.map((sub, subIndex) => (
+                                                    <li key={subIndex}>
+                                                        <strong>{sub.nome}: </strong>
+                                                        {sub.descricao}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
                                     </div>
                                 ))}
                             </div>

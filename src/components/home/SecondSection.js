@@ -2,9 +2,7 @@ import ButtonBlue from "../buttons/ButtonBlue";
 import { useEffect, useState, useRef } from "react";
 import "./SecondSection.css";
 import ButtonBlack from "../buttons/ButtonBlack";
-import Divisor1 from "../divisor/Divisor1";
-import Divisor2 from "../divisor/Divisor2";
-
+import Divisor11 from "../divisor/Divisor11";
 
 function SecondSection() {
 
@@ -37,7 +35,7 @@ function SecondSection() {
 
     return (
         <>
-            <Divisor1 className="divisor"></Divisor1>
+        <Divisor11/>
             <div className="second-section-container">
 
                 <div className="second-section-container-title" >
@@ -59,7 +57,6 @@ function SecondSection() {
                     </div>
                 </div>
             </div>
-            <Divisor2 className="divisor"></Divisor2>
         </>
     );
 }

@@ -1,0 +1,97 @@
+.oque-fazemos-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  background: #00235f;
+  background: 
+  url("../../assets/backgrounds/palavrasbgteste2.png"), linear-gradient(
+    190deg,
+    rgba(0, 35, 95, 1) 0%,
+    #0a1128 50%,
+    rgba(0, 35, 95, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  padding: 4rem 2rem;
+  color: white;
+  gap: 3rem;
+  border-bottom: #445df9 solid 5px;
+}
+
+
+.oque-fazemos-texto h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+  line-height: 1;
+}
+
+.oque-fazemos-texto .destaque {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #445df9, #49d7ff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.oque-fazemos-texto p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  max-width: 950px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 0.938rem;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+.oque-fazemos-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.card h3 span {
+  color: #49d7ff;
+  font-size: 1.6rem;
+  justify-self: end;
+  align-self: end;
+  margin: 0;
+  font-family: none;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .oque-fazemos-container {
+  }
+}

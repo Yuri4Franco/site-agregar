@@ -5,14 +5,17 @@ import FirstSection from "../components/home/FirstSection";
 import SecondSection from "../components/home/SecondSection";
 import ThirdSection from "../components/home/ThirdSection";
 import FooterLayout from "../layout/FooterLayout";
+import OqFazemos from "../components/home/OqFazemos";
+import QuemSomos from "../components/home/QuemSomos";
+
 function Home() {
     return (
         <div className="home">
-            <HeroSection />
+            <HeroSection></HeroSection>
             <HeaderLayout></HeaderLayout>
             <div className="sections-home">
-                <FirstSection></FirstSection>
-                <SecondSection></SecondSection>
+                <QuemSomos></QuemSomos>
+                <OqFazemos></OqFazemos>
                 <ThirdSection></ThirdSection>
             </div>
             <FooterLayout></FooterLayout>

@@ -37,7 +37,8 @@ function ThirdSection() {
 
     return (
         <div className="third-section-container">
-            <h1 className="h1-titulo"><span id="span-nossos">NOSSOS</span> MANTENEDORES</h1>
+            <span>NOSSOS</span >
+            <h1 className="h1-titulo">MANTENEDORES</h1>
             <div
                 ref={el => h1Refs.current[0] = el}
                 data-id="div1"
@@ -49,7 +50,7 @@ function ThirdSection() {
                 ))}
             </div>
 
-            <h1 className="h1-titulo"><span id="span-nossos">NOSSOS</span> ASSOCIADOS</h1>
+            <span>NOSSOS</span> <h1 className="h1-titulo">ASSOCIADOS</h1>
             <div
                 ref={el => h1Refs.current[1] = el}
                 data-id="div2"

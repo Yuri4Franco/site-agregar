@@ -52,6 +52,15 @@
   font-family: "poppins";
 }
 
+.subitem-list {
+  margin-top: 0;
+  padding: 0;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+  font-size: 1rem;
+}
+
 .section-parceiros-container {
   background-color: white;
   max-width: 22.5rem;

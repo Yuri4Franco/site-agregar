@@ -1,8 +1,7 @@
 /* Mobile First: Padrão para telas menores */
 .first-section-container {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr; /* Mobile: Apenas uma coluna */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   padding: 1.5rem;
@@ -50,12 +49,37 @@
   margin-top: 0.938rem;
 }
 
+#bg1 {
+  background: #000244;
+  background-image: url("/src/assets/backgrounds/teste.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+#bg2 {
+  background: #000244;
+  background-image: url("/src/assets/backgrounds/teste6.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+#bg3 {
+  background: #000244;
+  background-image: url("/src/assets/backgrounds/teste7.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
 /* Telas maiores: Ajuste para desktop */
 @media (min-width: 1024px) {
   .first-section-container {
-    gap: 2.5rem;
-    grid-template-columns: 21.875rem repeat(3, 12.5rem); /* Volta ao layout desktop */
-    height: 350px;
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+  }
+
+  .first-section-container > :first-child {
+    margin-right: 20px;
   }
 
   .first-section-container-text-h1 {

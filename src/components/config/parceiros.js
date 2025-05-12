@@ -8,16 +8,27 @@ const parceiros = [
         instagram: "https://www.instagram.com/acipanambirs/",
         linkedin: "https://www.linkedin.com/company/associa%C3%A7%C3%A3o-comercial-e-industrial/",
         website: "https://acipanambi.com/",
-        descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
-        items: [],
-        segmentos: [],
-        produtosDescricao: [],
+        logo: require("../../assets/logo/logo-aci-650x364.png"),
+        slogan: "a parceria que dá certo",
+        telefone: "(55) 3375-9350",
+        endereco: "Avenida Konrad Adenauer, 555 - Centro - Panambi RS",
+        email: "contato@acipanambi.com.br",
+        sobre: [
+            "A ACI-Panambi tem orgulho de escrever, desde 1936, uma história de progresso junto à comunidade. Fundada por líderes visionários, a associação surgiu da necessidade de representar, unir e fortalecer empresários locais. De lá pra cá, tem sido protagonista em conquistas estruturais, educacionais e econômicas de Panambi, atuando lado a lado com o poder público. Seu compromisso com a formação profissional, parcerias estratégicas e defesa dos interesses empresariais mantém viva a missão original: promover o desenvolvimento sustentável dos seus associados e do município. Mais que uma entidade, um elo que impulsiona Panambi."
+        ],
+        items: [
+            { titulo: "Missão", texto: "Promover o desenvolvimento do quadro associativo, congregando as organizações industriais, comercias, rurais e de serviços e seus trabalhadores, visando a prosperidade da comunidade." },
+            { titulo: "Visão", texto: "Ser reconhecida como referência regional entre as entidades empresariais do RS, na promoção do desenvolvimento de seus associados e da comunidade." },
+        ],
+        segmentos: [
+            { titulo: "", texto: "Entidade representativa dos interesses do setor empresarial, englobando empresas do comércio, indústria, serviços e agronegócio." }
+        ],
+        produtosDescricao: [
+            { titulo: "Locação de Salas:", descricao: "A ACI-Panambi oferece salas equipadas com tecnologia completa para eventos, incluindo retroprojetor, telão, som, internet, palco e espaço para coffee break." },
+            { titulo: "Biro de Crédito SCPC Boa Vista:", descricao: "O SCPC centraliza informações de crédito em todo o Brasil, oferecendo segurança e reduzindo riscos em transações comerciais, com dados confiáveis sobre pessoas físicas, jurídicas e veículos." },
+            { titulo: "Banco de Currículos:", descricao: "Banco de dados com currículos atualizados de profissionais que buscam mercado de trabalho" },
+            { titulo: "Workshops, cursos e palestras:", descricao: "Oferecemos encontros sobre diversos temas para associados e comunidade, com preços especiais para sócios." },
+        ],
         produtos: [],
         sede: [],
     },
@@ -30,17 +41,33 @@ const parceiros = [
         instagram: "https://www.instagram.com/bruningtecnometal/",
         linkedin: "https://www.linkedin.com/company/bruning-tecnometal/",
         website: "https://bruning.com.br/",
-        descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
+        logo: require("../../assets/logo/logo-bruning-650x364.png"),
+        slogan: "Gerar prosperidade conectando pessoas e tecnologias: esse é nosso propósito",
+        telefone: "(55) 3376-9600",
+        endereco: "R. Vinte e Cinco de Julho, 2305 - Alvorada, Panambi - RS, 98280-000",
+        email: "contato@bruning.com.br",
+        sobre: [
+            "Há quase oito décadas, unimos engenharia especializada, tecnologia de ponta e excelência industrial para entregar soluções que impulsionam o desenvolvimento de grandes marcas. Somos movidos pelo desafio de transformar o futuro — e, hoje, somos uma das maiores fabricantes de peças e conjuntos mecânicos de alta complexidade da América Latina.",
+            "Estamos presentes nos setores agrícola, rodoviário, automotivo e de construção. Temos um diferencial que nos orgulha: somos a única empresa brasileira a produzir tanques de combustível em alumínio.",
+            "Com uma estrutura de 130 mil m² em Panambi (RS), temos capacidade produtiva flexível e atuação internacional. Buscamos a inovação constante, fomentamos a parceria com grandes players globais e atuamos diariamente para garantir eficiência e competitividade.",
+            "Mais do que produzir com excelência, temos um compromisso com o todo: integramos práticas de responsabilidade social, ambiental e de governança à nossa rotina, contribuindo para um desenvolvimento sustentável para os negócios e para a sociedade.",
+        ],
         items: [],
-        segmentos: [],
+        segmentos: [
+            { titulo: "Unidade Agrícola:", texto: "A Unidade Agrícola foi a primeira da Bruning — onde tudo começou. Com tradição e experiência, ela atende gigantes do setor como AGCO, CNH, John Deere e Horsch, desenvolvendo e fabricando peças de alta complexidade para tratores, colheitadeiras e plantadeiras." },
+            { titulo: "Unidade Automotivo:", texto: "A Unidade Automotivo é especialista na produção de componentes metálicos para montadoras e sistemistas. Com um parque fabril altamente tecnológico, entrega peças presentes nos carros mais populares do mercado, atendendo nomes como Benteler, Boge, General Motors e Volkswagen." },
+            { titulo: "Unidade Construção:", texto: "A Unidade Construção fabrica conjuntos soldados de média e grande complexidade para equipamentos como retroescavadeiras, pás carregadeiras, escavadeiras e motoniveladoras. Atende marcas de peso no setor, como Caterpillar e John Deere." },
+            { titulo: "Unidade Rodoviário:", texto: "A Unidade Rodoviário desenvolve peças e conjuntos metálicos para veículos de carga e passageiros. Produz uma ampla variedade de componentes em aço e alumínio, usados por montadoras como DAF, Iveco, VW Bus & Truck, Mercedes, Metalsa, Scania e Volvo." },
+            { titulo: "Unidade de Tanques de Combustível:", texto: "A Unidade de Tanques de Combustível é a única no Brasil na produção de tanques em alumínio para o setor rodoviário. Suas soluções abastecem as maiores montadoras do país e do mundo, entre elas DAF, Iveco, MAN, Mercedes-Benz, Scania, Volkswagen e Volvo." },
+        ],
         produtosDescricao: [],
-        produtos: [],
+        produtos: [
+            { imagem: require("../../assets/produtos/BRUNING-1.png"), titulo: "AGRÍCOLA" },
+            { imagem: require("../../assets/produtos/BRUNING-2.png"), titulo: "AUTOMOTIVO" },
+            { imagem: require("../../assets/produtos/BRUNING-3.png"), titulo: "CONSTRUÇÃO" },
+            { imagem: require("../../assets/produtos/BRUNING-4.png"), titulo: "RODOVIÁRIO" },
+            { imagem: require("../../assets/produtos/BRUNING-5.png"), titulo: "TANQUES" },
+        ],
         sede: [],
     },
     {
@@ -52,15 +79,25 @@ const parceiros = [
         instagram: "https://www.instagram.com/cotripal/",
         linkedin: "https://www.linkedin.com/company/cotripal-agropecuária-cooperativa/",
         website: "https://cotripal.com.br/",
-        descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
-        items: [],
-        segmentos: [],
+        logo: require("../../assets/logo/logo-cotripal-650x364.png"),
+        slogan: "cooperar para crescer",
+        telefone: "(55) 3375-9000",
+        endereco: "Rua Hermann Meyer, 237, Panambi/RS",
+        email: "contato@cotripal.com.br - comunicacao@cotripal.com.br",
+        sobre: [
+            "A Cotripal Agropecuária Cooperativa iniciou sua trajetória em 1957, fruto da união de 29 agricultores que acreditavam na força da cooperação para transformar realidades. Fundada em Panambi/RS, a Cooperativa iniciou suas atividades com foco no armazenamento e comercialização de trigo. Ao longo das décadas, acompanhando as transformações do campo e da sociedade, a Cotripal diversificou suas atividades e consolidou sua presença em diversos municípios da região Noroeste do estado.",
+            "Hoje, atua em três pilares: Grãos, Pecuária e Varejo. Essa estrutura sólida permite que a Cooperativa esteja presente em diferentes momentos da vida de associados, funcionários e comunidades, promovendo desenvolvimento econômico, social e ambiental. Com um olhar voltado para a inovação e a sustentabilidade, a Cotripal segue crescendo junto com quem coopera, sempre fiel aos seus princípios fundadores."
+        ],
+        items: [
+            { titulo: "Missão", texto: "Realizar o ideal de união, trabalho e desenvolvimento mútuo, preconizado pelos fundadores." },
+            { titulo: "Visão", texto: "Ser referência de cooperativa de produção." },
+            { titulo: "Valores", texto: "União – Confiabilidade – Ética" }
+        ],
+        segmentos: [
+            { titulo: "Graos", texto: "Recebimento, beneficiamento e comercialização de grãos como soja, milho e trigo, além da produção de sementes, assistência técnica especializada e fornecimento de insumos." },
+            { titulo: "Pecuária", texto: "Produção e comercialização de carnes bovinas e suínas provenientes de associados, fábrica de rações próprias e serviços técnicos veterinários." },
+            { titulo: "Varejo", texto: "Supermercados, atacado, lojas de departamentos, postos de combustíveis, farmácias e autocentro." }
+        ],
         produtosDescricao: [],
         produtos: [],
         sede: [],
@@ -142,17 +179,107 @@ const parceiros = [
         instagram: "https://www.instagram.com/keplerweber/",
         linkedin: "https://www.linkedin.com/company/keplerweber/",
         website: "https://kepler.com.br/",
-        descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
-        items: [],
-        segmentos: [],
-        produtosDescricao: [],
-        produtos: [],
+        logo: require("../../assets/logo/logo-keplerweber-650x364.png"),
+        slogan: "100 anos de excelência no agronegócio",
+        telefone: "(55) 3375-9800",
+        endereco: "Avenida Adolfo Kepler Jr, 1500 Centro, Panambi - RS, Brasil",
+        email: "contato@kepler.com.br",
+        sobre: [
+            "Fundada em 1925, a Kepler Weber é uma empresa brasileira e líder na América Latina em soluções completas para beneficiamento, conservação, armazenamento e movimentação de sementes, grãos, biocombustíveis, rações e alimentos.",
+            "Com sede administrativa em São Paulo (SP), fábricas em Panambi (RS) e em Campo Grande (MS), a companhia conta com uma equipe altamente qualificada para planejar projetos, fabricar equipamentos, implantar infraestrutura completa, treinar os operadores e monitorar com uso de tecnologia a operação de clientes em unidades de 53 países e em 5 continentes.",
+            "A marca está presente em toda a cadeia do agronegócio, com projetos implementados em fazendas que produzem commodities, indústrias que transformam commodities em produtos de alto valor agregado, bem como terminais rodoferroviários, marítimos e fluviais que movimentam a logística internacional produtiva.",
+            "Posicionada estrategicamente em todas as regiões agrícolas do mercado, com 9 centros de distribuição e 150 agentes comerciais no Brasil, além de 18 agentes comerciais no exterior, a companhia conta com diferenciais únicos, como a capacidade de administrar mais de 300 projetos simultâneos, treinar 2.000 pessoas anualmente, e prestar consultoria para atualização, ampliação e modernização de unidades instaladas, permitindo redução de mão-de-obra, aumento de eficiência e atendimento às legislações vigentes.",
+            "Com DNA inovador, a empresa possui uma engenharia composta por 150 profissionais capazes de desenvolver, testar, validar e lançar produtos continuamente, tendo atualmente 27 patentes registradas e 46% das receitas oriundas de novos produtos ou versionamentos.",
+            "Produtos estes que são manufaturados com a mais alta tecnologia dentro da maior área construída do setor, com duas fábricas que somadas têm 88.000 m², operando 100% em sistema lean manufacturing, com certificações ISO 9001 e OHSAS 14000."
+        ],
+        items: [
+            {
+                titulo: "Propósito",
+                texto: "Cuidar da vida, protegendo o que vem da terra com soluções inovadoras em pós-colheita, promovendo segurança alimentar e sustentação para o futuro.",
+                subitens: []
+            },
+            {
+                titulo: "Missão",
+                texto: "Oferecer soluções diferenciadas e inovadoras de armazenagem e pós-colheita, gerando valor para clientes, acionistas, parceiros de negócios, colaboradores e a comunidade.",
+                subitens: []
+            },
+            {
+                titulo: "Valores",
+                texto: "",
+                subitens: [
+                    {
+                        nome: "Segurança",
+                        descricao: "Priorizar a integridade física e o bem-estar de colaboradores, clientes e parceiros, garantindo ambientes e práticas seguras."
+                    },
+                    {
+                        nome: "Respeito",
+                        descricao: "Valorizar as pessoas, o meio ambiente e as comunidades onde atuamos, promovendo relações éticas e sustentáveis."
+                    },
+                    {
+                        nome: "Integridade",
+                        descricao: "Manter transparência e honestidade em todas as ações, assegurando confiança e credibilidade no mercado."
+                    },
+                    {
+                        nome: "Excelência",
+                        descricao: "Buscar continuamente a melhoria e a inovação, entregando produtos de alta qualidade."
+                    }
+                ]
+            }
+        ],
+        segmentos: [
+            {
+                titulo: "Fazendas:",
+                texto: "Fornecemos soluções completas para produtores rurais, incluindo silos, secadores, máquinas de limpeza e transportadores, garantindo a conservação ideal dos grãos e a comercialização estratégica conforme o mercado de commodities."
+            },
+            {
+                titulo: "Negócios Internacionais:",
+                texto: "Com presença em mais de 50 países e cinco continentes, somos líderes no mercado de pós-colheita na América Latina, levando nossas soluções para produtores e agroindústrias globais."
+            },
+            {
+                titulo: "Portos e Terminais:",
+                texto: "Nossas soluções para movimentação de granéis sólidos em terminais de transbordo e portos garantem eficiência, segurança e alta capacidade operacional, contribuindo para o agronegócio brasileiro no mercado internacional."
+            },
+            {
+                titulo: "Agroindústrias:",
+                texto: "Desenvolvemos projetos e equipamentos para indústrias que transformam commodities agrícolas em produtos de maior valor agregado, como etanol de milho, óleo de soja, ração animal e moinhos de trigo e arroz."
+            },
+            {
+                titulo: "Reposição e Serviços:",
+                texto: "Atuamos na modernização e ampliação de sistemas de armazenagem, fornecendo peças de reposição, adequações às normativas de segurança e serviços especializados como treinamento e operação assistida."
+            }
+        ],
+        produtosDescricao: [
+            {
+                titulo: "Silos Metálicos:",
+                descricao: "Projetados para atender às demandas de armazenagem em fazendas, cooperativas e terminais portuários, garantindo a preservação da qualidade dos grãos."
+            },
+            {
+                titulo: "Elevadores:",
+                descricao: "Equipamentos de alta capacidade, qualidade e segurança, com opções para alívio de pressão e visualização do fluxo de grãos."
+            },
+            {
+                titulo: "Transportadores Horizontais:",
+                descricao: "Sistemas eficientes e duráveis para o transporte seguro de grãos, proporcionando operação silenciosa e confiável."
+            },
+            {
+                titulo: "Secadores:",
+                descricao: "Tecnologias que garantem eficiência energética, qualidade final dos grãos e simplicidade de operação, adaptáveis às necessidades de cada cliente."
+            },
+            {
+                titulo: "Estruturas Metálicas:",
+                descricao: "Projetos robustos e versáteis desenvolvidos sob medida para as exigências operacionais de armazenagem e logística."
+            },
+            {
+                titulo: "Procer:",
+                descricao: "Em 2023, adquirimos 50% mais uma ação da Procer S/A, líder em tecnologias para armazenagem de grãos. Fundada em 2011 em Criciúma (SC), a Procer é pioneira em sensores digitais para automação da armazenagem, otimizando processos, reduzindo consumo de energia e garantindo melhor conservação dos grãos."
+            }
+        ],
+        produtos: [
+            { imagem: require("../../assets/produtos/KEPLERWEBER-1.png"), titulo: "SILOS" },
+            { imagem: require("../../assets/produtos/KEPLERWEBER-2.png"), titulo: "SECADORES" },
+            { imagem: require("../../assets/produtos/KEPLERWEBER-3.png"), titulo: "ELEVADORES" },
+            { imagem: require("../../assets/produtos/KEPLERWEBER-4.png"), titulo: "TERMINAIS" },
+        ],
         sede: [],
     },
     {
@@ -219,7 +346,7 @@ const parceiros = [
             { titulo: "Setor Agrícola:", texto: " Seus principais equipamentos são Plataformas para Descarga de Granéis, Cabines de Captação de Pó, Coletores de Amostras de Cereais e Basculadores de Containers, que proporcionam mais eficiência e agilidade no recebimento dos grãos." },
             { titulo: "Setor Industrial:", texto: "Comercializa equipamentos acoplados em empilhadeiras, como Garras para Fardos e Caixas, Garra para Caixas, Garras para Bobinas, Garras para Tambores e Bombonas, Garras para Pneus e Rodas, Inversores e Empurradores de Cargas, Posicionador de Garfos. Também disponibiliza Rampas Niveladoras de Docas e Rampas Niveladoras, Plataformas Elevadoras, além de outros equipamentos que tornam a movimentação de cargas com alta performance, ergonomia e qualidade." },
             { titulo: "Setor Florestal:", texto: "Gruas Florestais acopladas em Trator, Gruas Florestais Estacionárias, Autocarregáveis e Carretas, Gruas Sucateiras e Garras Florestais, conferindo agilidade na movimentação e transportes de cargas." },
-            { titulo: "Equipamentos Especiais:", texto: "Desenvolvidos de acordo com as necessidades específicas de cada cliente, trazendo eficiência nas operações.  " }
+            { titulo: "Equipamentos Especiais:", texto: "Desenvolvidos de acordo com as necessidades específicas de cada cliente, trazendo eficiência nas operações.  " },
         ],
         produtosDescricao: [
 
@@ -332,15 +459,21 @@ const parceiros = [
         linkedin: "https://www.linkedin.com/company/coprel",
         website: "https://www.coprel.com.br/",
         descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
+        logo: require("../../assets/logo/logo-coprel-650x364.png"),
+        slogan: "cooperação que liga você ao futuro",
+        telefone: "(54) 3199-5800",
+        endereco: "Avenida Brasil, 2530, Ibirubá - RS, CEP: 98200-000",
+        email: "coprel@coprel.com.br",
+        sobre: ["Fundada em 1968 em Ibirubá/RS por agricultores e lideranças locais, a Coprel viabilizou a eletrificação rural no centro-norte gaúcho através do modelo cooperativo. Hoje, atua na distribuição, geração e comercialização de energia elétrica, oferece soluções de operação e manutenção para usinas, e serviços de telecomunicações pela Coprel Telecom. Opera principalmente em 72 municípios do Rio Grande do Sul com sua concessão de distribuição de energia e infraestrutura de rede de fibra ótica. Com sua recente entrada no Mercado Livre de Energia como comercializadora varejista, viabiliza sua expansão e atendimento a clientes em todo o Brasil. Seu trabalho é guiado pelos valores cooperativistas, com governança participativa e foco em sustentabilidade e inovação."],
         items: [],
-        segmentos: [],
-        produtosDescricao: [],
+        segmentos: [
+            { titutlo: "", texto: "A Coprel atua em diversos segmentos da área de energia e telecomunicações. No sector da energia, a Coprel atua na distribuição, geração e comercialização, além de prestar serviços de manutenção e gestão de usinas e instalações elétricas. No sector das telecomunicações, a Coprel Telecom oferece serviços de internet, telefonia e TV. " }
+        ],
+        produtosDescricao: [
+            { titulo: "Coprel Energia:", descricao: "Atua na Distribuição, Geração e Comercialização de Energia. Fornece energia elétrica para 72 municípios, atendendo residências, indústrias, comércio e propriedades rurais com qualidade e continuidade no serviço.Também investe em energia renovável com duas centrais geradoras hidrelétricas (CGHs) e três pequenas centrais hidrelétricas (PCHs) próprias, sendo uma em construção; além de participar em outros seis empreendimentos hidrelétricos em parceria com outras cooperativas e investidores. Recentemente, a Coprel também passou a atuar no mercado livre de energia como comercializadora varejista autorizada, oferecendo soluções estratégicas e personalizadas para consumidores em todo o Brasil que buscam eficiência energética, previsibilidade de custos e condições competitivas." },
+            { titulo: "Coprel Soluções:", descricao: "Presta serviços especializados de operação e manutenção de usinas hidrelétricas e subestações de energia, além de manutenção e otimização de instalações elétricas industriais. Coloca toda sua expertise técnica e mais de cinco décadas de experiência no setor elétrico a serviço de outras cooperativas, empresas e empreendedores do setor energético." },
+            { titulo: "Coprel Telecom:", descricao: "Disponibiliza serviços de internet de alta velocidade com infraestrutura própria 100% em fibra ótica, telefonia fixa e móvel, TV por assinatura e serviços digitais integrados (Coprel Play, Qualifica, Tocalivros e Coprel Security). Destaca-se pela promoção da inclusão digital inclusive em áreas rurais, com atendimento 24h e equipes de suporte especializadas, garantindo estabilidade, velocidade e qualidade em 68 municípios." }
+        ],
         produtos: [],
         sede: [],
 
