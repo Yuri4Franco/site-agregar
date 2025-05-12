@@ -1,6 +1,6 @@
 /* Definições da area PRODUTOS do Parceiro - INICIO */
 
-.galeria-produtos{
+.galeria-produtos {
   padding-top: 15px;
 }
 
@@ -18,7 +18,7 @@
 
 /* Mantém os slides do tamanho certo */
 .swiper-slide-produto {
-  width: 100% !important;
+  width: 100%;
   display: inline-block;
   flex-shrink: 0;
 }
@@ -62,11 +62,17 @@
 /* Definições para o Desktop */
 
 @media (min-width: 1024px) {
-    .galeria-produtos img{
-        width: 25rem;
-    }
+  .galeria-produtos img {
+    width: 25rem;
+  }
 
-    .produto-item{
-        width: 25rem;
-    }
+  .swiper-slide-produto {
+    width: auto;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .produto-item {
+    width: 25rem;
+  }
 }
