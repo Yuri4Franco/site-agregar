@@ -435,17 +435,37 @@ const parceiros = [
         instagram: "https://www.instagram.com/3tentos/",
         linkedin: "https://www.linkedin.com/company/3tentosagro/",
         website: "https://3tentos.com.br/",
-        descricao: "",
         logo: "",
         slogan: "",
-        telefone: "",
-        endereco: "",
+        telefone: "(55) 3372-3700 | 08008782886",
+        endereco: ": Av. Principal, 187 - Caixa postal 41 - Santa Bárbara do Sul/RS | CEP: 98240-000 ",
         email: "",
-        sobre: [],
-        items: [],
-        segmentos: [],
+        sobre: [
+            "A 3tentos é uma empresa essencialmente tradicional, com raízes no sentimento familiar e fundamentada pela seriedade, confiança e honestidade das pessoas que constroem essa história.",
+            "É uma empresa estruturada pela força e resistência de uma grande equipe, que possui um espírito abrasador, motivado, determinado a superar desafios e focada em resultados.",
+            "A instituição valoriza muito sua imagem, e se orgulha do reconhecimento pela grandeza, solidez e resiliência no mercado.",
+            "A 3tentos é feita por pessoas com o sentimento de pertencimento, que trabalham no que gostam, focadas no agronegócio e que caminham coletivamente na visão e objetivos da empresa, prezando pela parceria e com o produtor no centro do nosso ecossistema.",
+        ],
+        items: [
+            {
+                titulo: "Nossos Valores", texto: "", subitens: [{ nome: "Valor do Campo", descricao: "O campo é a base de nosso negócio, e disso a gente entende. Nos orgulhamos e sabemos da importância que ele tem para o desenvolvimento da sociedade." },
+                { nome: "Valor da Parceria", descricao: "Parceria é estar próximo, sempre. Somos feitos por pessoas que colaboram para o crescimento e prosperidade mútua." },
+                { nome: "Valor da Segurança", descricao: "Queremos que as pessoas sintam-se seguras com a 3tentos, porque todas as nossas relações são verdadeiras e honestas." },
+                ],
+            },
+
+        ],
+        segmentos: [
+            { titulo: "", texto: "Atuando em mais de 69 lojas, 3 parques industriais, 2 centros de pesquisa tecnológicos, 2 unidades de beneficiamento de sementes e uma unidade misturadora de fertilizantes, a 3tentos consolida a cada dia sua operação na cadeia de valor agrícola no Rio Grande do Sul e Mato Grosso." },
+            { titulo: "", texto: "A 3tentos atua com o ecossistema completo: Insumos, Grãos e Indústria, com soluções digitais, soluções para o agricultor, para a lavoura e para empresas. " },
+
+        ],
         produtosDescricao: [],
-        produtos: [],
+        produtos: [
+            { imagem: require("../../assets/produtos/3TENTOS-1.png"), titulo: "" },
+            { imagem: require("../../assets/produtos/3TENTOS-2.png"), titulo: "" },
+            { imagem: require("../../assets/produtos/3TENTOS-3.png"), titulo: "" },
+        ],
         sede: [],
     },
     {
@@ -471,7 +491,7 @@ const parceiros = [
             { titulo: "Missão", texto: "Honrar suas origens e respeitar o desejo de cada cliente tendo como princípios inegociáveis a qualidade e a inovação." }
         ],
         segmentos: [
-            { titulo: "Arcano Madeiras –:", texto: "Nossa especialidade traduzida no que há de melhor no mercado: Pergolados, Decks, Escadas, Esruturas Especiais, Madeiramento à vista e Revestimentos." },
+            { titulo: "Arcano Madeiras –", texto: "Nossa especialidade traduzida no que há de melhor no mercado: Pergolados, Decks, Escadas, Esruturas Especiais, Madeiramento à vista e Revestimentos." },
             { titulo: "Arcano Portas –", texto: "Para Ambientes que prezam pela versatilidade e qualidade: Portas Laqueadas com uma ampla variedade de cores e texturas e Portas Externas (Madeira Maciça)." },
             { titulo: "Arcano Casas –", texto: "Soluções para um lar memorável: Linha Basic, Modular, Frame e Plus." },
             { titulo: "Arcano Floor –", texto: "Qualidade aliada à durabilidade para espaços imponentes: Assoalho Tradicional e Piso Pronto." },
@@ -521,16 +541,25 @@ const parceiros = [
         instagram: "https://www.instagram.com/domtisolucoes/",
         linkedin: "https://www.linkedin.com/company/domti-solu%C3%A7%C3%B5es/",
         website: "https://domti.tech/",
-        descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
+        logo: require("../../assets/logo/logo-domti-650x364.png"),
+        slogan: "Softwares para Gestão",
+        telefone: "(55) 99232-9474",
+        endereco: "• Em Panambi: Rua Adolfo Kepler, 35 sala 01 - Bairro: Parque Moinho Velho - Panambi - RS CEP: 98280-000 | • Em Porto Alegre: Rua Vieira de Castro, 285 sala 301 - Bairro: Farroupilha, Porto Alegre - RS. CEP: 90040-320.",
+        email: "suporte@domti.tech",
+        sobre: [
+            "Com mais de 30 anos de mercado, a empresa passou por por fases, durante a sua jornada. Na sua constituição, iniciou como sendo uma fábrica de software, desenvolvendo sistemas de gestão empresarial para grandes empresas em cima da tecnologia Oracle - lider de mercado em banco de dados. Em meados do ano 2000, a partir do expertise adquirido em desenvolvimento de sistemas corporativos, lançou seu software ERP SGE para atender a um mercado carente de sistemas para missão crítica. Unindo o conhecimento de negócio decorrente dos projetos desenvolvidos,  e a experiência de seus profissionais, em ter atendido dezenas de clientes no desenvolvimento de sistemas. No anos seguintes a solução 'SGE' incorporou novos produtos como CRM, BPM, GEDe, dando a possibilidade de que seus clientes possam ter uma solução totalmente integrada, abrangente, e sem que haja a complexidade e custo de gerenciar integrações entre fornecedores diferentes.",
+            "A empresa DOM TI se apresenta através de softwares de sistemas de gestão empresarial com o objetivo de garantir competitividade para empresas do segmentos de obras, instalações e montagens, através de seus produtos e serviços em tecnologia. Nosso propósito é levar para empresas com foco em engenharia, uma solução de gestão que possa atender suas necessidades de forma ágil, oportunizando que elas se tornem competitivas na gestão. Apesar da nossa oferta de softwares ser abrangente, temos a maior dedicação e zelo em nosso atendimento, através  de serviços como suporte, treinamento e implantação.",
+            "A escolha de sistemas de gestão empresarial (ERP) é sempre um processo que requer atenção. Além do produto, é importante observar o comportamento do fornecedor de software e quanto essa empresa pode atender 	a futuras novas demandas de seus clientes. A DOM TI possui uma carteira de clientes, muito fidelizada. Seja através de outros módulos que compõe a solução, seja pela necessidade de serviços, a DOM TI está sempre posicionada para atender seus clientes. Através de vários tipos de licenciamento de software e aquisição de softwares por módulos, a empresa se posiciona com uma oferta bem atrativa, onde o cliente pode iniciar, ainda pequeno, e através de seu crescimento e o surgimento de novas necessidades, ir adquirindo novos módulos, internalizando alguns sistemas que são gerenciados de forma externa (contabilidade e folha de pagamento, por exemplo), sempre podendo contar com a DOM TI para a evolução de seu negócio."
+        ],
         items: [],
-        segmentos: [],
-        produtosDescricao: [],
+        segmentos: [
+            { titulo: "", texto: "A empresa de destaca por atender o segmento de produtos para a agroindústria, principalmente produtos engenheirados - projetados e fabricados com base em princípios de engenharia, visando aplicações específicas - como instalações e montagens elétricas, automação, silos de armazenagem, pivô de irrigação, além de outros produtos fabricados e projetados para atender a demandas específicas." }
+        ],
+        produtosDescricao: [
+            { titulo: "ERP SGE -", descricao: "Sistema multi-empresa voltado ao mercado SMB, que atende empresas de produtos engenheirados e seriados. Além das áreas comercial, logística, suprimentos, financeiro, o SGE  atende áreas administrativas como fiscal, contabilidade e folha de pagamento, entregando para o cliente uma solução completa e integrada. Suas verticais de obras e produção seriada apoiam as empresas em funções mais específicas na área produtiva." },
+            { titulo: "DOMCRM -", descricao: "Sistema que a tende a gestão comercial, oportunizando o acompanhamento de todo o ciclo de venda de oportunidades, gerenciando times de vendas. Possui completa integração ao ERP SGE, permitindo um processo fluido, da prospecção comercial ao faturamento do negócio. O seu módulo de gestão de atendimento, permite acompanhar a gestão de serviços, sejam eles internos ou externos, atendendo a áreas como assistência técnica, Service Desk, e outros serviços sob demanda que necessitem, gerenciar filas e serem colaborativos." },
+            { titulo: "FÁBRICA DE SOFTWARE DOM TI -", descricao: "Serviço de desenvolvimento de sistemas organizado em cima de metodologia ágil e melhores práticas de engenharia de software, desenvolvendo soluções de software em diversas tecnologias de desenvolvimento, como sistemas web, aplicativos móveis e softwares empresariais. Nossa fábrica de software abrange o ciclo completo do software, desde a análise e projeto até a implantação, manutenção e suporte." },
+        ],
         produtos: [],
         sede: [],
     },
@@ -601,17 +630,29 @@ const parceiros = [
         instagram: "https://www.instagram.com/nbrtec/",
         linkedin: "https://www.linkedin.com/company/nbrtec/",
         website: "https://www.nbrtec.com.br/",
-        descricao: "",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
+        logo: require("../../assets/logo/logo-nbrtec-650x364.png"),
+        slogan: "soluções inteligentes para o seu negócio",
+        telefone: "(55) 3375-7773 | (55) 9 9114-4187  ",
+        endereco: "Rua Erica 315, Bairro Erica, Panambi/ RS ",
+        email: "contato@nbrtec.com.br",
+        sobre: [
+            "Nossa história tem início em 25 de fevereiro de 2005, com o serviço de desenvolvimento de placas e controladores eletrônicos. Ao longo da história a NBRtec, foi ampliando a sua expertise em diferentes áreas do mercado.",
+            "Na NBRtec, unimos tecnologia, engenharia e inteligência para transformar processos em soluções eficientes, seguras e conectadas. Com um portfólio completo e integrado, atuamos nas áreas de instalações elétricas, montagem de quadros de comando, automação industrial, e desenvolvimento de controladores IoT, oferecendo soluções sob medida para os desafios da indústria moderna. Também somos especialistas em termometria para grãos, aplicamos nossa expertise para garantir precisão e confiabilidade no monitoramento de silos e armazéns, promovendo mais segurança e qualidade no armazenamento agrícola.",
+            "Nosso diferencial está na integração entre o físico e o digital: desenvolvemos uma plataforma em nuvem própria, voltada para a coleta, análise e tratamento de dados em tempo real, que amplia a capacidade de gestão, rastreabilidade e tomada de decisões inteligentes. Com inovação, comprometimento e foco no resultado, a NBRtec é parceira de empresas que buscam evoluir, automatizar e se conectar ao futuro.",
+        ],
         items: [],
-        segmentos: [],
+        segmentos: [
+            { titulo: "", texto: "A NBRtec atua com soluções em automação industrial, instalações elétricas, montagem de painéis e desenvolvimento de tecnologias IoT. Também é referência em termometria para grãos, oferecendo monitoramento preciso para silos e armazéns. Combinando engenharia e inovação digital, entrega projetos integrados e inteligentes para a indústria moderna." }
+        ],
         produtosDescricao: [],
-        produtos: [],
+        produtos: [
+            { imagem: require("../../assets/produtos/NBRTEC-1.png"), titulo: "TERMOMETRIA AUTOMÁTICA" },
+            { imagem: require("../../assets/produtos/NBRTEC-2.png"), titulo: "INSTALAÇÕES ELÉTRICAS" },
+            { imagem: require("../../assets/produtos/NBRTEC-3.png"), titulo: "QUADROS DE COMANDO" },
+            { imagem: require("../../assets/produtos/NBRTEC-4.png"), titulo: "QUADROS DE COMANDO" },
+            { imagem: require("../../assets/produtos/NBRTEC-5.png"), titulo: "CLOUD 2" },
+            { imagem: require("../../assets/produtos/NBRTEC-6.png"), titulo: "CLOUD 1" },
+        ],
         sede: [],
     },
     {
@@ -620,15 +661,39 @@ const parceiros = [
         tipo: "associado",
         LogoNormal: require("../../assets/logo/logo-pontes-normal.png"),
         LogoWhite: require("../../assets/logo/logo-pontes-white.png"),
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
-        items: [],
-        segmentos: [],
-        produtosDescricao: [],
+        logo: require("../../assets/logo/logo-pontes-650x364.png"),
+        slogan: "soluções para operações de intralogística",
+        telefone: "(51) 99772-0876",
+        endereco: "Rio Grande do Sul: Rua Nelson Teichmann, 175 Distrito Industrial - Cachoeirinha/RS 51. 3205.4400 | Santa Catarina: Br 101 KM 33 Distrito Industrial - Joinville/SC 47. 3121.8100 Rua Tiradentes, 80 São Cristóvão - Chapecó/SC 49. 3513.1200",
+        email: "marketing@pontesmaquinas.com.br",
+        website: "https://www.pontesmaquinas.com.br/",
+        sobre: [
+            "A Pontes iniciou suas atividades em Porto Alegre, Rio Grande do Sul, como um pequeno escritório de representações. Com o tempo, evoluiu para a distribuição de máquinas, consolidando-se oficialmente em 1º de junho de 1977 como Pontes Distribuidora de Máquinas e Equipamentos LTDA.",
+            "Em 1º de janeiro de 1982, a empresa deu um importante passo ao se tornar distribuidora exclusiva das empilhadeiras Hyster no Rio Grande do Sul, oferecendo soluções completas e serviços especializados para operações de transporte, movimentação e armazenagem de materiais.",
+            "Em 1º de janeiro de 1982, a empresa deu um importaEm 1991, a Pontes expandiu sua atuação para Santa Catarina, inaugurando a unidade de Joinville e mantendo a exclusividade na distribuição das empilhadeiras Hyster na região. A partir de 2005, a empresa diversificou seus serviços ao ingressar no mercado de locação de máquinas, rapidamente se tornando uma referência também nesse segmento.nte passo ao se tornar distribuidora exclusiva das empilhadeiras Hyster no Rio Grande do Sul, oferecendo soluções completas e serviços especializados para operações de transporte, movimentação e armazenagem de materiais.",
+            "Mais recentemente, em fevereiro de 2024, a Pontes ampliou ainda mais seu portfólio, tornando-se distribuidora exclusiva das empilhadeiras Yale em Santa Catarina. Essa expansão permitiu à empresa oferecer aluguel de máquinas para todo o Brasil, reforçando seu compromisso com soluções inovadoras e atendimento de excelência.",
+        ],
+        items: [
+            { titulo: "Visão", texto: "Ser o mais eficaz provedor de soluções para operações de intralogística do Brasil, até 2025." },
+            { titulo: "Missão", texto: "Garantir a eficiência do processo intralogístico dos nossos clientes, com elevado padrão de qualidade, provendo as mais atuais soluções tecnológicas e de gestão." },
+            {
+                titulo: "Valores", texto: "", subitens: [
+                    { nome: "Cliente", descricao: "razão de ser" },
+                    { nome: "Time Pontes", descricao: "a base de tudo" },
+                    { nome: "Lucro", descricao: "rentabilidade e tolerância zero com desperdícios" },
+                    { nome: "Qualidade", descricao: "em tudo que fazemos" },
+                    { nome: "Respeito", descricao: "em todos os sentidos" },
+                    { nome: "Inquietação", descricao: "para evoluir sempre." },
+                ]
+            },
+
+        ],
+        segmentos: [
+            { titulo: "", texto: "A Pontes Máquinas atua na distribuição, venda, locação e manutenção de empilhadeiras e equipamentos para movimentação de materiais. Representante oficial das marcas Hyster e Yale no Sul do Brasil, oferece soluções completas para operações logísticas, com foco em eficiência, segurança e atendimento personalizado." }
+        ],
+        produtosDescricao: [
+            { titulo: "", descricao: "A Pontes Máquinas, distribuidora oficial Hyster e Yale no Sul do Brasil, oferece soluções completas para movimentação de materiais. Seu portfólio inclui empilhadeiras a combustão, elétricas, transpaleteiras, modelos para corredores estreitos e empilhadeiras de grande porte (Big Trucks), com capacidades que variam de 1.000 a 52.000 kg. Entre os serviços, destacam-se a locação e venda de máquinas, fornecimento de peças e manutenção (preventiva, corretiva e reformas), além de contratos personalizados e monitoramento de frotas para otimizar a operação e reduzir custos." }
+        ],
         produtos: [],
         sede: [],
     },
@@ -681,17 +746,24 @@ const parceiros = [
         instagram: "https://www.instagram.com/ska_oficial/",
         linkedin: "https://www.linkedin.com/company/ska-automacao-engenharias",
         website: "https://ska.com.br/",
-        descricao: "",
-        logo: "",
+        logo: require("../../assets/logo/logo-ska-650x364.png"),
         slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
+        telefone: "0800 510 2900",
+        endereco: "Aguardando Material",
+        email: "Aguardando Material",
+        sobre: [
+            "Aguardando Material"
+        ],
         items: [],
-        segmentos: [],
-        produtosDescricao: [],
-        produtos: [],
+        segmentos: [
+            { titulo: "Aguardando Material", texto: "" }
+        ],
+        produtosDescricao: [
+            { titulo: "Aguardando Material", texto: "" }
+        ],
+        produtos: [
+
+        ],
         sede: [],
 
     },
@@ -704,16 +776,42 @@ const parceiros = [
         instagram: "https://www.instagram.com/yaweibrasil/",
         linkedin: "https://www.linkedin.com/company/yawei-brasil",
         website: "https://yawei.com.br/",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
-        items: [],
-        segmentos: [],
+        logo: require("../../assets/logo/logo-yawei-650x364.png"),
+        slogan: "além de potência, desempenho e produtividade",
+        telefone: "(11) 91045-0434",
+        endereco: "Unidade 1: Rua Vinte e Cinco de Julho, 600, Becker Panambi RS CEP: 98280-000 | Unidade 2: Rua Vereador Francisco Perini, 99 - Morada Alta Jarinu SP CEP: 13240-000",
+        email: "contato@yawei.com.br",
+        sobre: [
+            "Fundada em 1956 na China a Yawei logo se destacou no mercado internacional de máquinas de corte e conformação de chapas metálicas. Graças a qualidade de seus produtos e valores competitivos, a empresa foi listada com sucesso na bolsa de valores de Shenzhen, sendo a primeira empresa pública na indústria de máquinas ferramentas para corte e conformação de chapas na China.",
+            "No ano de 2018, os sócios-diretores Marcelo Ferreira e Marlon Tunnermann fundaram a Yawei Brasil, com a premissa de proporcionar suporte abrangente a cada um dos clientes, desenvolvendo relacionamentos comerciais duradouros e estreitos. Através da disponibilização de um suporte pós-venda completo, abrangendo atualizações, manutenções preventivas e corretivas, a Yawei Brasil complementa a já renomada excelência da gigante chinesa Yawei."
+        ],
+        items: [
+            { titulo: "Missão", texto: "Oferecer tecnologia de ponta em automação, máquinas de corte e conformação de chapas metálicas, promovendo produtividade, qualidade e segurança aos clientes, com agilidade, criatividade e responsabilidade socioambiental." },
+            { titulo: "Visão", texto: "Ser referência nacional em tecnologia industrial, reconhecida pela inovação, qualidade e excelência no atendimento, sendo a principal escolha dos clientes no segmento." },
+            {
+                titulo: "Valores", texto: "", subitens: [
+                    { nome: "Qualidade de Vida", descricao: " Promovemos um ambiente de trabalho saudável, colaborativo e ético, incentivando o desenvolvimento pessoal e profissional dos nossos colaboradores." },
+                    { nome: "Comprometimento", descricao: "Atuamos com responsabilidade, dedicação e integridade, sempre em busca dos melhores resultados e da satisfação de nossos clientes e parceiros." },
+                    { nome: "Qualidade e Inovação", descricao: "Investimos continuamente em tecnologias e soluções que garantam excelência nos produtos, serviços e processos, acompanhando as tendências do mercado." },
+                    { nome: "Respeito e Parceria", descricao: "Valorizamos as pessoas, o relacionamento ético e transparente, e construímos parcerias duradouras baseadas na confiança mútua." },
+                    { nome: "Atendimento", descricao: "Temos foco total nas necessidades dos nossos clientes, oferecendo suporte técnico especializado, soluções personalizadas e agilidade em cada etapa do atendimento." },
+                    { nome: "Política da Qualidade", descricao: "Atuar no mercado de máquinas de corte e conformação de chapas metálicas, automação, instalação e assistência técnica, com foco na satisfação total dos clientes e melhoria contínua. Contamos com uma equipe qualificada, parcerias estratégicas e cumprimento dos requisitos legais, regulamentares e das partes interessadas." },
+
+                ]
+            },],
+        segmentos: [
+            { titulo: "", texto: "A Yawei Brasil atua no segmento de máquinas de corte e conformação de chapas metálicas, oferecendo soluções em automação industrial. Com tecnologia de ponta e suporte técnico completo, a empresa busca aumentar a produtividade e a qualidade de seus clientes, sendo referência nacional em inovação e atendimento." }
+        ],
         produtosDescricao: [],
-        produtos: [],
+        produtos: [
+            { imagem: require("../../assets/produtos/YAWEI-1.png"), titulo: "Prensa Servo SKE1-80" },
+            { imagem: require("../../assets/produtos/YAWEI-2.png"), titulo: "Automatização" },
+            { imagem: require("../../assets/produtos/YAWEI-3.png"), titulo: "HPE" },
+            { imagem: require("../../assets/produtos/YAWEI-4.png"), titulo: "PBH" },
+            { imagem: require("../../assets/produtos/YAWEI-5.png"), titulo: "HLF" },
+            { imagem: require("../../assets/produtos/YAWEI-6.png"), titulo: "FBE" },
+
+        ],
         sede: [],
     },
 ]

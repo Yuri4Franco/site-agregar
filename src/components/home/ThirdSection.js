@@ -37,6 +37,8 @@ function ThirdSection() {
 
     return (
         <div className="third-section-container">
+            <h1>VITRINE DOS NOSSOS PARCEIROS</h1>
+            <h2>Conheça os parceiros que caminham ao lado do Instituto Agregar na transformação da região Noroeste do Rio Grande do Sul. Clique em cada um para descobrir mais sobre suas atuações e contribuições!</h2>
             <span>NOSSOS</span >
             <h1 className="h1-titulo">MANTENEDORES</h1>
             <div
@@ -56,7 +58,7 @@ function ThirdSection() {
                 data-id="div2"
                 className={`background-effect-1 ${visibleStates["div2"] ? "visible" : ""}`}>
             </div>
-            <div className="cards-mantenedores">
+            <div className="cards-associados">
                 {associados.map((parceiro, index) => (
                     <CardParceiro key={index} {...parceiro} />
                 ))}
