@@ -31,7 +31,7 @@
   margin-bottom: 10px;
 }
 
-.third-section-container h2{
+.third-section-container h2 {
   font-size: 1.5rem;
   font-weight: normal;
   font-family: "Poppins", sans-serif;
@@ -39,7 +39,7 @@
   color: white;
   width: 60%;
   padding: 30px;
-  text-align:center;
+  text-align: center;
   justify-self: center;
 }
 
@@ -77,6 +77,18 @@
     justify-self: center;
   }
 
+  .third-section-container h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+    color: white;
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+    justify-self: center;
+  }
+
   .cards-associados {
     width: 50%;
     display: flex;
@@ -86,7 +98,6 @@
     justify-content: center;
     justify-self: center;
   }
-
 
   .third-section-container .background-effect-1,
   .third-section-container .background-effect-2 {
