@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
 import Logo from "../../assets/logo/logo-marca.svg";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import "./HeroSection.css"
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import HeaderLayout from '../../layout/HeaderLayout';
 
 function HeroSection() {
     const [palavras] = useTypewriter({

@@ -11,6 +11,23 @@
   box-shadow: 0 -2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.social-icons .social-buttons:active {
+  width: 8.75rem;
+  background-color: blue;
+  box-shadow: 0 0 15px blue, 0 0 10px blue, 0 0 20px blue;
+}
+
+.social-icons .social-buttons:active span {
+  display: flex;
+  transition: all 0.3s ease-out;
+}
+
+.social-icons .social-buttons:active .icon {
+  color: white;
+  display: flex;
+  justify-content: start;
+}
+
 .footer-hero {
   display: flex;
   flex-direction: column;

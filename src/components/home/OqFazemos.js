@@ -1,15 +1,12 @@
 import "./OqFazemos.css";
-import { BsLink45Deg, BsLightbulb, BsInfoCircle } from "react-icons/bs";
-import { BiLink, BiBulb } from "react-icons/bi";
+import { BsInfoCircle } from "react-icons/bs";
 import { FiLink } from "react-icons/fi";
-import { FaRegLightbulb, FaLink } from "react-icons/fa";
+import { FaRegLightbulb } from "react-icons/fa";
 
-import { motion } from "framer-motion";
-import WaveDivider from "../divisor/WaveDivider";
 
 function OqFazemos() {
     return (
-        <section className="oque-fazemos-container">
+        <section id="oque-fazemos" className="oque-fazemos-container">
             <div className="oque-fazemos-texto">
                 <h2>
                     O QUE <span className="destaque">FAZEMOS?</span>
@@ -21,17 +18,17 @@ function OqFazemos() {
                 <div className="card">
 
                     <h3><span id="conexoes-icon"><FiLink /> </span>CONEXÃO</h3>
-                    <p>O Instituto Agregar tem e busca muitas conexões e cultivamos inovação com propósito.</p>
+                    <p>Promovemos encontros entre empresas, universidades, poder público e comunidade para construir soluções conjuntas e fortalecer o ecossistema regional.</p>
                 </div>
 
                 <div className="card">
                     <h3><span><FaRegLightbulb /></span> INOVAÇÃO</h3>
-                    <p>Como um hub de inovação, o Instituto Agregar busca fortalecer cultura da inovação através de workshops, eventos e links úteis.</p>
+                    <p>Fomentamos ideias que viram ação. Criamos um ambiente onde tecnologia, pesquisa e criatividade se transformam em soluções reais para o território.</p>
                 </div>
 
                 <div className="card">
                     <h3><span><BsInfoCircle /></span> SENSIBILIZAÇÃO</h3>
-                    <p>Nosso comprometimento vai além: buscamos transformar a rede de parceiros com ações alinhadas ao desenvolvimento regional.</p>
+                    <p>Tornamos a inovação acessível. Por meio de eventos e ações educativas, aproximamos as pessoas dos desafios e oportunidades da nova economia.</p>
                 </div>
             </div>
         </section>

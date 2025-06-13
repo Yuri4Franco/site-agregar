@@ -8,10 +8,10 @@ const NavMenu = ({ isFooter, menuOpen }) => {
     // Definição dos itens do menu
     const menuItems = [
         { path: "/", label: "INÍCIO" },
-        { path: "/sobre", label: "SOBRE NÓS" },
-        { path: "/parceiros", label: "PARCEIROS" },
-        { path: "/contato", label: "CONTATO" },
-        { path: "/faca-parte", label: "FAÇA PARTE" },
+        { path: "/#quem-somos", label: "SOBRE NÓS" },
+        { path: "/#oque-fazemos", label: "O QUE FAZEMOS" },
+        { path: "/#vitrine-agregar", label: "PARCEIROS" },
+        { path: "https://wa.me/555596821340?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Instituto%20Agregar", label: "FAÇA PARTE" },
     ];
 
     return (

@@ -37,8 +37,7 @@
   font-family: "Poppins", sans-serif;
   line-height: 1;
   color: white;
-  width: 60%;
-  padding: 30px;
+  padding-bottom: 60px;
   text-align: center;
   justify-self: center;
 }
@@ -83,7 +82,7 @@
     font-family: "Poppins", sans-serif;
     line-height: 1;
     color: white;
-    width: 90%;
+    width: 60%;
     padding: 30px;
     text-align: center;
     justify-self: center;

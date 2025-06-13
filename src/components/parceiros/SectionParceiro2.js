@@ -7,6 +7,7 @@ import HeaderLayout from "../../layout/HeaderLayout";
 import ButtonWhite from "../buttons/ButtonWhite";
 import "./SectionParceiros2.css";
 import CarrosselProdutos from "./CarrosselProdutos";
+import ButtonHome from "../buttons/ButtonHome";
 
 function SectionParceiros2() {
     const h1Refs = useRef([]);
@@ -188,7 +189,7 @@ function SectionParceiros2() {
                             <h1>Junte-se a nós!</h1>
                             <p id="cta-desktop">Faça parte da revolução que a inovação está trazendo para o interior do Rio Grande do Sul. Com grandes empresas e cidades com os melhores IDHs do Brasil, o interior é o novo cenário perfeito para inovar e crescer.</p>
                             <p id="cta-smartphones">Faça parte desta revolução!</p>
-                            <ButtonWhite ButtonText="ASSOCIE-SE"></ButtonWhite>
+                            <ButtonHome text="FAÇA PARTE" link="https://wa.me/555596821340?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Instituto%20Agregar" />
                         </div>
                     </div>
                 </div>

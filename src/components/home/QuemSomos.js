@@ -1,12 +1,11 @@
-import React from "react";
 import "./QuemSomos.css";
-import ButtonTest from "../buttons/ButtonTest";
+import ButtonHome from "../buttons/ButtonHome";
 import { FaRocket, FaSeedling, FaUsers, FaChartLine, FaBookOpen, FaLightbulb, FaStar } from "react-icons/fa";
 
 
 const QuemSomos = () => {
     return (
-        <section className="quem-somos">
+        <section id="quem-somos" className="quem-somos">
             <div className="conteudo">
                 <h2>QUEM SOMOS</h2>
                 <h1>
@@ -31,7 +30,7 @@ const QuemSomos = () => {
                         <li><FaLightbulb className="beneficios-icons" /> Acesso a tecnologias e soluções inovadoras</li>
                         <li><FaStar className="beneficios-icons" /> Valorização da sua marca</li>
                         <div className="button-container">
-                            <ButtonTest ButtonText="SAIBA MAIS" />
+                            <ButtonHome text="SAIBA MAIS" link="https://wa.me/555596821340?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Instituto%20Agregar" />
                         </div>
                     </ul>
                 </div>

@@ -175,6 +175,24 @@
   line-height: 3.125rem;
   transition: all 0s ease-out;
 }
+
+.parceiros-social .social-icons .social-buttons:hover  {
+  width: 8.75rem;
+  background-color: var(--background-instituto);
+}
+
+.parceiros-social .social-icons .social-buttons:hover span {
+  display: flex;
+  transition: all 0.3s ease-out;
+}
+
+.parceiros-social .social-icons .social-buttons:hover .icon {
+  color: white;
+  display: flex;
+  justify-content: start;
+}
+
+
 /* Definições dos botoes das redes sociais - FIM */
 
 /* Ajuste do tamanho da imagem da empresa(parceiro) */
