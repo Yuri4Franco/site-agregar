@@ -2,11 +2,11 @@ import { useEffect, useState, useRef } from "react";
 import { TbBrandLinkedinFilled, TbBrandInstagramFilled, TbWorldWww } from "react-icons/tb";
 import { useParams } from "react-router-dom";
 import parceiros from "../config/parceiros";
-import "./SectionParceiro.css";
-import ButtonBlue from "../buttons/ButtonBlue";
 import FooterLayout from "../../layout/FooterLayout";
 import HeaderLayout from "../../layout/HeaderLayout";
-import ButtonWhite from "../buttons/ButtonWhite";
+import "./SectionParceiro.css";
+import CarrosselProdutos from "./CarrosselProdutos";
+import ButtonHome from "../buttons/ButtonHome";
 
 function SectionParceiros() {
     const h1Refs = useRef([]);
@@ -36,8 +36,11 @@ function SectionParceiros() {
     }, []);
 
     const { nomeParceiro } = useParams();
+    console.log(nomeParceiro);
+    console.log(parceiros);
 
     const parceiro = parceiros.find(p => p.nome === decodeURIComponent(nomeParceiro));
+    
 
     if (!parceiro) {
         return <h1>Parceiro não encontrado!</h1>;
@@ -80,7 +83,7 @@ function SectionParceiros() {
                         </div>
                     </div>
 
-                    <div className="sobre-parceiros">
+                    <div className={`sobre-parceiros ${parceiro.sede.length === 0 ? "sem-sede" : ""}`}>
                         <div>
                             <h1
                                 ref={el => h1Refs.current[0] = el}
@@ -92,19 +95,38 @@ function SectionParceiros() {
                             {parceiro.sobre.map((paragrafo, index) => (
                                 <p key={index}>{paragrafo}</p>
                             ))}
+
                             <div className="items-texto">
                                 {parceiro.items.map((item, index) => (
                                     <div key={index} className="item-box">
-                                        <p><strong>{item.titulo}: </strong>{item.texto}</p>
+                                        {/* Item principal */}
+                                        <p>
+                                            <strong>{item.titulo}: </strong>
+                                            {item.texto}
+                                        </p>
+
+                                        {/* Sub-itens (se existirem) */}
+                                        {item.subitens?.length > 0 && (
+                                            <ul className="subitem-list">
+                                                {item.subitens.map((sub, subIndex) => (
+                                                    <li key={subIndex}>
+                                                        <strong>{sub.nome}: </strong>
+                                                        {sub.descricao}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
                                     </div>
                                 ))}
                             </div>
                         </div>
-                        <div className="sede-imagens">
-                            {parceiro.sede.map((imagem, index) => (
-                                <img key={index} src={imagem.imagem} alt={imagem.alt} className="imagem-sede" />
-                            ))}
-                        </div>
+                        {parceiro.sede.length > 0 && (
+                            <div className="sede-imagens">
+                                {parceiro.sede.map((imagem, index) => (
+                                    <img key={index} src={imagem.imagem} alt={imagem.alt} className="imagem-sede" />
+                                ))}
+                            </div>
+                        )}
                     </div>
 
                     <div className="segmentos-parceiros">
@@ -147,16 +169,8 @@ function SectionParceiros() {
                                 </li>
                             ))}
                         </div>
-                        <div className="galeria-produtos">
-                            {parceiro.produtos.map((produto, index) => (
-                                <div key={index} className="produto-item">
-                                    <img src={produto.imagem} alt={produto.titulo} className="imagem-produto" />
-                                    <div className="produto-titulo">
-                                        <h1>{produto.titulo}</h1>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                        <CarrosselProdutos produtos={parceiro.produtos} />
+
                         <p id="info-adicional">Para mais informações de produtos e serviços acesse: <a href={parceiro.website} target="_blank" rel="noreferrer">{parceiro.website}</a></p>
                     </div>
 
@@ -175,9 +189,9 @@ function SectionParceiros() {
                     <div className="cta">
                         <div className="cta-container">
                             <h1>Junte-se a nós!</h1>
-                            <p>Faça parte da revolução que a inovação está trazendo para o interior do Rio Grande do Sul. Com grandes empresas e cidades com os melhores IDHs do Brasil, o interior é o novo cenário perfeito para inovar e crescer.</p>
+                            <p id="cta-desktop">Faça parte da revolução que a inovação está trazendo para o interior do Rio Grande do Sul. Com grandes empresas e cidades com os melhores IDHs do Brasil, o interior é o novo cenário perfeito para inovar e crescer.</p>
                             <p id="cta-smartphones">Faça parte desta revolução!</p>
-                            <ButtonWhite ButtonText="ASSOCIE-SE"></ButtonWhite>
+                            <ButtonHome text="FAÇA PARTE" link="https://wa.me/555596821340?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Instituto%20Agregar" />
                         </div>
                     </div>
                 </div>

@@ -1,16 +1,71 @@
+/*Para o Mobile*/
 .section-parceiros {
   background-image: url("/src/assets/backgrounds/background.png");
   background-color: var(--background-instituto);
-  background-size: cover;
-  background-blend-mode: overlay;
-  background-attachment: fixed; /* Mantém o fundo fixo enquanto o conteúdo rola */
+  background-size: contain;
+  background-blend-mode: overlay; /* Mantém o fundo fixo enquanto o conteúdo rola */
   box-sizing: border-box;
-  width: 100%;
-  height: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  min-height: 100vh;
+}
+
+/* Definições Gerais - INICIO */
+.section-parceiros h1 {
+  width: max-content;
+  padding-right: 1.875rem;
+  text-align: start;
+  font-size: 1.5rem;
+  font-family: "poppins";
+  color: rgb(0, 0, 0);
+  overflow-wrap: normal;
+}
+
+.section-parceiros h2 {
+  justify-self: center;
+  text-align: center;
+  font-family: "poppins";
+  font-size: 1.75rem;
+  line-height: 1;
+  hyphens: none;
+}
+
+.section-parceiros h3 {
+  justify-self: center;
+  font-family: "poppins";
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+
+.section-parceiros p {
+  text-align: justify;
+  padding: 0.625rem;
+  font-size: 1rem;
+  font-family: "poppins";
+}
+
+.section-parceiros li {
+  text-align: justify;
+  padding: 0.625rem;
+  list-style-type: none;
+  font-size: 1rem;
+  font-family: "poppins";
+}
+
+.subitem-list {
+  margin-top: 0;
+  padding: 0;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+  font-size: 1rem;
 }
 
 .section-parceiros-container {
-  width: 87.5rem;
+  background-color: white;
+  max-width: 22.5rem;
+  width: 100%;
+  display: block;
   justify-self: center;
   padding: 1.25rem;
   background-color: rgb(255, 255, 255);
@@ -21,16 +76,15 @@
     0 0 1.25rem rgba(0, 0, 0, 0.136);
 }
 
-.section-parceiros-container h1 {
-  width: max-content;
-  padding-right: 1.875rem;
-  text-align: start;
-  font-size: 1.5rem;
-  font-family: "poppins";
-  color: rgb(0, 0, 0);
+.sobre-parceiros,
+.segmentos-parceiros,
+.produtos-parceiros,
+.contato-parceiros {
+  margin-bottom: 1.25rem;
 }
 
-.h1-background {
+/* Animação "efeito de texto subilinhado" - INICIO */
+.section-parceiros .h1-background {
   background-image: linear-gradient(
     transparent 50%,
     transparent 90%,
@@ -42,49 +96,37 @@
   transition: background-size 2s cubic-bezier(0.5, 0.04, 0.3, 1);
 }
 
-.sobre-parceiros,
-.segmentos-parceiros,
-.produtos-parceiros,
-.contato-parceiros {
-  margin-bottom: 1.25rem;
-}
-
-.h1-background.visible {
+.section-parceiros .h1-background.visible {
   background-size: 100% 100%;
 }
+
+/*  Animação "efeito de texto subilinhado" - FIM */
+
+/* Definições Gerais - FIM */
+
+/* Definições da area da Logo e Titulo, slogan e redes sociais do Parceiro */
+
 .titulo-logo-parceiros {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  height: 15.625rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  height: auto;
   align-items: center;
   justify-items: center;
 }
 
 .titulo-logo-parceiros h1 {
-  font-family: "poppins";
-  font-size: 3.75rem;
+  font-size: 2.75rem;
   justify-self: center;
   line-height: 1.2;
   text-align: center;
   padding: 0;
+  display: none;
 }
 
-.titulo-logo-parceiros h2 {
-  justify-self: center;
-  text-align: center;
-  font-family: "poppins";
-  font-size: 2.188rem;
-  line-height: 1;
-}
-
-.titulo-logo-parceiros h3 {
-  justify-self: center;
-  font-family: "poppins";
-  font-size: 1.25rem;
-
-  opacity: 0.7;
-}
-
+/* Definições dos botoes das redes sociais - INICIO*/
 .parceiros-social {
   margin-top: 1.25rem;
   display: flex;
@@ -136,8 +178,7 @@
 
 .parceiros-social .social-icons .social-buttons:hover {
   width: 8.75rem;
-  background-color: blue;
-  border: 1px solid blue;
+  background-color: var(--background-instituto);
 }
 
 .parceiros-social .social-icons .social-buttons:hover span {
@@ -149,109 +190,51 @@
   color: white;
   display: flex;
   justify-content: start;
-  background-color: blue;
 }
 
-.sobre-parceiros {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  gap: 0.625rem;
-}
+/* Definições dos botoes das redes sociais - FIM */
 
-.section-parceiros-container p {
-  text-align: justify;
-  padding: 0.625rem;
-  font-size: 1rem;
-  font-family: "poppins";
-}
-
-.section-parceiros-container ul {
-  text-align: justify;
-  list-style-type: none;
-  font-size: 1rem;
-  font-family: "poppins";
-}
-
-.section-parceiros-container li {
-  text-align: justify;
-  padding: 0.625rem;
-  list-style-type: none;
-  font-size: 1rem;
-  font-family: "poppins";
-}
-
-.sede-imagens {
-  display: flex;
-  flex-direction: column;
-  gap: 0.625rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.sede-imagens img {
-  height: auto;
-  width: 80%;
-}
-
-.galeria-produtos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.625rem;
-  align-content: center;
-  justify-content: center;
-}
-
-.descricao-produtos ul {
-  text-align: justify;
-  list-style-type: none;
-  font-size: 1rem;
-  font-family: "poppins";
-}
-
-.produtos-parceiros h1 {
-  margin-bottom: 1.25rem;
-}
-
-.galeria-produtos img {
-  display: block;
-  height: auto;
-  width: 21.875rem;
-  border-radius: 1.25rem;
-}
-
-.produto-item {
-  position: relative;
-  display: inline-block;
-  width: 21.875rem;
-  /* Para evitar que elementos absolutos fiquem "fora" */
-}
-
-.produto-item .produto-titulo {
-  position: absolute;
-  display: flex;
-  text-justify: center;
-  bottom: 0; /* Coloca o título no final da imagem */
-  width: 100%; /* Faz o título ocupar toda a largura */
-  background: rgba(
-    0,
-    0,
-    0,
-    0.6
-  ); /* Adiciona um fundo escuro para legibilidade */ /* Cor do texto */
-  border-bottom-left-radius: 1.25rem; /* Ajusta para combinar com a borda da imagem */
-  border-bottom-right-radius: 1.25rem;
-  backdrop-filter: blur(0.625rem);
-  height: 3.75rem;
-}
-
-.produto-item .produto-titulo h1 {
-  font-size: 1rem;
+/* Ajuste do tamanho da imagem da empresa(parceiro) */
+.logo-container .logo-empresa {
   width: 100%;
-  text-align: center;
-  padding: 0;
-  color: white;
 }
+/* Definições da area da Logo e Titulo, slogan e redes sociais do Parceiro - FIM */
+
+/* Definições da area SOBRE do Parceiro - INICIO */
+
+.sobre-parceiros .sede-imagens {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  justify-content: center;
+}
+.imagem-sede {
+  width: 90%;
+  height: auto;
+}
+
+/* Definições da area SOBRE do Parceiro - FIM */
+
+/* Definições da area SEGMENTOS do Parceiro - INICIO */
+
+/* Definições da area SEGMENTOS do Parceiro - FIM */
+
+/* Definições da area PRODUTOS do Parceiro - INICIO */
+
+#info-adicional {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.produtos-parceiros a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Definições da area PRODUTOS do Parceiro - FIM */
+
+/* Definições da area do CTA - INICIO */
+
 .cta {
   display: flex;
   flex-direction: column;
@@ -261,20 +244,7 @@
   z-index: 1; /* Mantém o CTA acima do background */
 }
 
-.produtos-parceiros a {
-  text-decoration: none;
-  color: black;
-}
-
-.produtos-parceiros a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
-#info-adicional {
-  font-size: 0.875rem;
-  text-align: center;
-}
+/* Definições Textos CTA */
 
 .cta h1 {
   color: white;
@@ -288,9 +258,9 @@
   font-size: 1.25rem;
   text-align: center;
 }
+
 .cta-container {
   position: relative;
-  margin: 0;
   background-image: url("../../assets/backgrounds/background-corp.jpg");
   background-size: cover;
   background-color: var(--background-instituto);
@@ -298,7 +268,8 @@
   display: inline-block;
   justify-items: center;
   padding: 3.125rem;
-  width: 75rem;
+  max-width: 300px;
+  width: 100%;
   border-radius: 2.5rem;
   margin-top: 3.125rem;
   margin-bottom: 1.875rem;
@@ -319,10 +290,16 @@
   animation: spin 3s linear infinite;
 }
 
+/* CTA para Android e Desktop */
 #cta-smartphones {
+  display: block;
+}
+
+#cta-desktop {
   display: none;
 }
 
+/* Animação da borda do CTA */
 .cta-container::after {
   background-image: conic-gradient(from var(--angulo1), transparent 50%, blue);
 }
@@ -356,64 +333,66 @@
   }
 }
 
-@media (max-width: 1024px) {
+/* Definições da area do CTA - FIM */
+
+/* Adaptação para Tablets */
+@media (min-width: 768px) {
+}
+
+/* Adaptação para Desktops */
+@media (min-width: 1024px) {
   .section-parceiros-container {
-    width: 22.5rem;
-  }
-  .section-parceiros li {
-    hyphens: auto;
-    overflow-wrap: break-word;
+    max-width: 85.5rem;
   }
 
   .titulo-logo-parceiros {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    flex-direction: column-reverse;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 15.625rem;
+    align-items: center;
+    justify-items: center;
   }
-  .titulo-logo-parceiros .logo-empresa {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
+
+  .titulo-logo-parceiros h1 {
+    display: block;
   }
 
   .sobre-parceiros {
-    display: inline-block;
-  }
-  .titulo-logo-parceiros,
-  .sobre-parceiros,
-  .segmentos-parceiros,
-  .produtos-parceiros,
-  .contato-parceiros {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
   }
 
-  .produto-item {
-    width: 300px;
+  .sobre-parceiros.sem-sede {
+    grid-template-columns: 100%;
   }
 
-  .galeria-produtos .imagem-produto {
-    width: 100%;
-    height: auto;
+  .sede-imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    align-items: center;
+    justify-content: center;
   }
 
-  .cta {
-    width: 300px;
+  .produtos-parceiros a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .produtos-parceiros a:hover {
+    text-decoration: underline;
+    color: blue;
   }
 
   .cta-container {
-    width: 100%;
-  }
-
-  .cta-container p {
-    display: none;
+    max-width: 75rem;
   }
 
   #cta-smartphones {
+    display: none;
+  }
+
+  #cta-desktop {
     display: block;
-    color: white;
-    font-size: 1.25rem;
-    text-align: center;
   }
 }

@@ -751,9 +751,7 @@ const parceiros = [
         telefone: "0800 510 2900",
         endereco: "Aguardando Material",
         email: "Aguardando Material",
-        sobre: [
-            "Aguardando Material"
-        ],
+        sobre: [],
         items: [],
         segmentos: [
             { titulo: "Aguardando Material", texto: "" }
