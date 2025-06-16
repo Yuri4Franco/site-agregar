@@ -4,13 +4,75 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.institutoagregar.com.br/</loc>
-  <lastmod>2025-06-16T17:04:43+00:00</lastmod>
-</url>
-
-
+  <!-- URLS -->
+  <url>
+    <loc>https://www.institutoagregar.com.br/</loc>
+    <lastmod>2025-06-16T17:04:43+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/aci</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/bruning</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/cotripal</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/fockink</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/keplerweber</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/pref-municipal-de-panambi</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/saur</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/tromink</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/3tentos</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/arcano</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/avipan</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/coprel</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/domti</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/easypro-tech</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/growdev</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/nbrtec</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/widitec-qualyagro</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/pontes-maquinas</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/shelter</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/sirros-iot</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/ska</loc>
+  </url>
+  <url>
+    <loc>https://www.institutoagregar.com.br/parceiros/yawei-brasil</loc>
+  </url>
 </urlset>
