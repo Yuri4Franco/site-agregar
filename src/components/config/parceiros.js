@@ -504,6 +504,30 @@ const parceiros = [
         ],
     },
     {
+        nome: "Avipan",
+        categoria: "associado",
+        tipo: "associado",
+        LogoNormal: require("../../assets/logo/logo-avipan-normal.png"),
+        LogoWhite: require("../../assets/logo/logo-avipan-white.png"),
+        instagram: "",
+        linkedin: "",
+        website: "https://www.avipan.com.br/",
+        logo: "",
+        slogan: "",
+        telefone: "",
+        endereco: "",
+        email: "",
+        sobre: [],
+        items: [],
+        segmentos: [],
+        produtosDescricao: [],
+        produtos: [
+
+        ],
+        sede: [],
+
+    },
+    {
         nome: "Coprel",
         categoria: "associado",
         tipo: "associado",
@@ -620,7 +644,30 @@ const parceiros = [
             { imagem: require("../../assets/sedes/EASYPRO-SEDE.png"), alt: "Sede da Easypro" }
         ],
     },
+    {
+        nome: "Growdev",
+        categoria: "associado",
+        tipo: "associado",
+        LogoNormal: require("../../assets/logo/logo-growdev-normal.png"),
+        LogoWhite: require("../../assets/logo/logo-growdev-white.png"),
+        instagram: "",
+        linkedin: "",
+        website: "https://growdev.com.br/",
+        logo: "",
+        slogan: "",
+        telefone: "",
+        endereco: "",
+        email: "",
+        sobre: [],
+        items: [],
+        segmentos: [],
+        produtosDescricao: [],
+        produtos: [
 
+        ],
+        sede: [],
+
+    },
     {
         nome: "NBRtec",
         categoria: "associado",
@@ -654,6 +701,30 @@ const parceiros = [
             { imagem: require("../../assets/produtos/NBRTEC-6.png"), titulo: "CLOUD 1" },
         ],
         sede: [],
+    },
+    {
+        nome: "Widitec Qualyagro",
+        categoria: "associado",
+        tipo: "associado",
+        LogoNormal: require("../../assets/logo/logo-qualyagro-normal.png"),
+        LogoWhite: require("../../assets/logo/logo-qualyagro-white.png"),
+        instagram: "",
+        linkedin: "",
+        website: "https://www.qualyagro.com.br/",
+        logo: "",
+        slogan: "",
+        telefone: "",
+        endereco: "",
+        email: "",
+        sobre: [],
+        items: [],
+        segmentos: [],
+        produtosDescricao: [],
+        produtos: [
+
+        ],
+        sede: [],
+
     },
     {
         nome: "Pontes Máquinas",
@@ -696,6 +767,30 @@ const parceiros = [
         ],
         produtos: [],
         sede: [],
+    },
+    {
+        nome: "Shelter",
+        categoria: "associado",
+        tipo: "associado",
+        LogoNormal: require("../../assets/logo/logo-shelter-normal.png"),
+        LogoWhite: require("../../assets/logo/logo-shelter-white.png"),
+        instagram: "",
+        linkedin: "",
+        website: "https://shelterseguranca.com.br/",
+        logo: "",
+        slogan: "",
+        telefone: "",
+        endereco: "",
+        email: "",
+        sobre: [],
+        items: [],
+        segmentos: [],
+        produtosDescricao: [],
+        produtos: [
+
+        ],
+        sede: [],
+
     },
     {
         nome: "Sirros IoT",
