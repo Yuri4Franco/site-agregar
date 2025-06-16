@@ -38,7 +38,7 @@ function ThirdSection() {
     return (
         <section id="vitrine-agregar">
             <div className="third-section-container">
-                <h1>VITRINE DOS NOSSOS PARCEIROS</h1>
+                <h1 className="h1-titulo">VITRINE DOS NOSSOS PARCEIROS</h1>
                 <h2>Conheça os parceiros que caminham ao lado do Instituto Agregar na transformação da região Noroeste do Rio Grande do Sul. Clique em cada um para descobrir mais sobre suas atuações e contribuições!</h2>
                 <span>NOSSOS</span >
                 <h1 className="h1-titulo">MANTENEDORES</h1>
