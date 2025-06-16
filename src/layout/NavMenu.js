@@ -1,11 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./NavMenu.css"; // Criamos um CSS separado para manter a organização
+import "./NavMenu.css"; 
 
 const NavMenu = ({ isFooter, menuOpen }) => {
     const location = useLocation();
-
-    // Definição dos itens do menu
     const menuItems = [
         { path: "/", label: "INÍCIO" },
         { path: "/#quem-somos", label: "SOBRE NÓS" },
