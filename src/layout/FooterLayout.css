@@ -102,6 +102,7 @@
 /* Footer Menu */
 .footer-menu {
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .footer-menu h4 {
@@ -134,7 +135,7 @@
 
 .nav-menu-footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   justify-content: center;
   justify-items: start;
