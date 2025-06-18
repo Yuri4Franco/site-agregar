@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import "./HeaderLayout.css";
-import Logo from "../assets/logo/logo-white-font.svg";
-import NavMenu from "./NavMenu"; // Importando o menu separado
+import Logo from "../assets/logos/logo-white-font.svg";
+import NavMenu from "./NavMenu";
 
 function HeaderLayout() {
     const [menuOpen, setMenuOpen] = useState(false);
-
-    // Alterna o menu para mobile
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -20,7 +18,7 @@ function HeaderLayout() {
                 <input
                     type="checkbox"
                     id="checkbox"
-                    checked={menuOpen} // Garante que o checkbox reflete o estado
+                    checked={menuOpen}
                     onChange={toggleMenu}
                 />
                 <label htmlFor="checkbox" className="toggle">
@@ -29,7 +27,6 @@ function HeaderLayout() {
                     <div className="bars" id="third"></div>
                 </label>
             </div>
-            {/* Passamos o estado menuOpen para o NavMenu */}
             <NavMenu menuOpen={menuOpen} />
         </header>
     );

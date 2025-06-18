@@ -1,4 +1,4 @@
-    import Logo from "../assets/logo/logo-agregar-marca1.png";
+    import Logo from "../assets/logos/logo-agregar-marca1.png";
     import "./FooterLayout.css";
     import { TbPhoneFilled, TbMailFilled, TbLocationFilled, TbBrandLinkedinFilled, TbBrandInstagramFilled, TbBrandYoutubeFilled } from "react-icons/tb";
     import NavMenu from "./NavMenu"; // Importando o menu reutilizável

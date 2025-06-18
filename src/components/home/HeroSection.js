@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo/logo-marca.svg";
+import Logo from "../../assets/logos/logo-marca.svg";
 import { motion } from 'framer-motion';
 import "./HeroSection.css"
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
