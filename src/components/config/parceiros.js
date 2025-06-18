@@ -62,11 +62,11 @@ const parceiros = [
         ],
         produtosDescricao: [],
         produtos: [
-            { imagem: require("../../assets/produtos/BRUNING-1.png"), titulo: "AGRÍCOLA" },
-            { imagem: require("../../assets/produtos/BRUNING-2.png"), titulo: "AUTOMOTIVO" },
-            { imagem: require("../../assets/produtos/BRUNING-3.png"), titulo: "CONSTRUÇÃO" },
-            { imagem: require("../../assets/produtos/BRUNING-4.png"), titulo: "RODOVIÁRIO" },
-            { imagem: require("../../assets/produtos/BRUNING-5.png"), titulo: "TANQUES" },
+            { imagem: require("../../assets/produtos/BRUNING-1.webp"), titulo: "AGRÍCOLA" },
+            { imagem: require("../../assets/produtos/BRUNING-2.webp"), titulo: "AUTOMOTIVO" },
+            { imagem: require("../../assets/produtos/BRUNING-3.webp"), titulo: "CONSTRUÇÃO" },
+            { imagem: require("../../assets/produtos/BRUNING-4.webp"), titulo: "RODOVIÁRIO" },
+            { imagem: require("../../assets/produtos/BRUNING-5.webp"), titulo: "TANQUES" },
         ],
         sede: [],
     },
@@ -156,13 +156,13 @@ const parceiros = [
             }
         ],
         produtos: [
-            { imagem: require("../../assets/produtos/FOCKINK-1.png"), titulo: "Irrigação" },
-            { imagem: require("../../assets/produtos/FOCKINK-2.png"), titulo: "Termometria e Aeração" },
-            { imagem: require("../../assets/produtos/FOCKINK-3.png"), titulo: "Painéis Elétricos e Automação de Processos" },
-            { imagem: require("../../assets/produtos/FOCKINK-4.png"), titulo: "Instalações Elétricas" },
-            { imagem: require("../../assets/produtos/FOCKINK-5.png"), titulo: "Energia Fotovoltaica" },
-            { imagem: require("../../assets/produtos/FOCKINK-6.png"), titulo: "Subestações" },
-            { imagem: require("../../assets/produtos/FOCKINK-7.png"), titulo: "Fockink IoT" },
+            { imagem: require("../../assets/produtos/FOCKINK-1.webp"), titulo: "Irrigação" },
+            { imagem: require("../../assets/produtos/FOCKINK-2.webp"), titulo: "Termometria e Aeração" },
+            { imagem: require("../../assets/produtos/FOCKINK-3.webp"), titulo: "Painéis Elétricos e Automação de Processos" },
+            { imagem: require("../../assets/produtos/FOCKINK-4.webp"), titulo: "Instalações Elétricas" },
+            { imagem: require("../../assets/produtos/FOCKINK-5.webp"), titulo: "Energia Fotovoltaica" },
+            { imagem: require("../../assets/produtos/FOCKINK-6.webp"), titulo: "Subestações" },
+            { imagem: require("../../assets/produtos/FOCKINK-7.webp"), titulo: "Fockink IoT" },
 
 
         ],
@@ -275,10 +275,10 @@ const parceiros = [
             }
         ],
         produtos: [
-            { imagem: require("../../assets/produtos/KEPLERWEBER-1.png"), titulo: "SILOS" },
-            { imagem: require("../../assets/produtos/KEPLERWEBER-2.png"), titulo: "SECADORES" },
-            { imagem: require("../../assets/produtos/KEPLERWEBER-3.png"), titulo: "ELEVADORES" },
-            { imagem: require("../../assets/produtos/KEPLERWEBER-4.png"), titulo: "TERMINAIS" },
+            { imagem: require("../../assets/produtos/KEPLERWEBER-1.webp"), titulo: "SILOS" },
+            { imagem: require("../../assets/produtos/KEPLERWEBER-2.webp"), titulo: "SECADORES" },
+            { imagem: require("../../assets/produtos/KEPLERWEBER-3.webp"), titulo: "ELEVADORES" },
+            { imagem: require("../../assets/produtos/KEPLERWEBER-4.webp"), titulo: "TERMINAIS" },
         ],
         sede: [],
     },
@@ -352,10 +352,10 @@ const parceiros = [
 
         ],
         produtos: [
-            { imagem: require("../../assets/produtos/SAUR-4.png"), titulo: "Linha Agrícola-Plataforma de Descarga para Granéis" },
-            { imagem: require("../../assets/produtos/SAUR-3.png"), titulo: "Linha Florestal-Grua Florestal" },
-            { imagem: require("../../assets/produtos/SAUR-2.png"), titulo: "Linha Industrial-Garra para Bobinas" },
-            { imagem: require("../../assets/produtos/SAUR-1.png"), titulo: "Equipamentos Especiais-Spreeder" },
+            { imagem: require("../../assets/produtos/SAUR-4.webp"), titulo: "Linha Agrícola-Plataforma de Descarga para Granéis" },
+            { imagem: require("../../assets/produtos/SAUR-3.webp"), titulo: "Linha Florestal-Grua Florestal" },
+            { imagem: require("../../assets/produtos/SAUR-2.webp"), titulo: "Linha Industrial-Garra para Bobinas" },
+            { imagem: require("../../assets/produtos/SAUR-1.webp"), titulo: "Equipamentos Especiais-Spreeder" },
 
         ],
         sede: [
@@ -414,12 +414,12 @@ const parceiros = [
             }
         ],
         produtos: [
-            { imagem: require("../../assets/produtos/TROMINK-1.png"), titulo: "SILO" },
-            { imagem: require("../../assets/produtos/TROMINK-5.png"), titulo: "SILO" },
-            { imagem: require("../../assets/produtos/TROMINK-6.png"), titulo: "SILO" },
-            { imagem: require("../../assets/produtos/TROMINK-2.png"), titulo: "ELEVADOR" },
-            { imagem: require("../../assets/produtos/TROMINK-3.png"), titulo: "MALT" },
-            { imagem: require("../../assets/produtos/TROMINK-4.png"), titulo: "SECADOR" },
+            { imagem: require("../../assets/produtos/TROMINK-1.webp"), titulo: "SILO" },
+            { imagem: require("../../assets/produtos/TROMINK-5.webp"), titulo: "SILO" },
+            { imagem: require("../../assets/produtos/TROMINK-6.webp"), titulo: "SILO" },
+            { imagem: require("../../assets/produtos/TROMINK-2.webp"), titulo: "ELEVADOR" },
+            { imagem: require("../../assets/produtos/TROMINK-3.webp"), titulo: "MALT" },
+            { imagem: require("../../assets/produtos/TROMINK-4.webp"), titulo: "SECADOR" },
         ],
         sede: [
             { imagem: require("../../assets/sedes/TROMINK-SEDE.png"), alt: "Sede da Tromink" } // Sem imagem fornecida
@@ -462,9 +462,9 @@ const parceiros = [
         ],
         produtosDescricao: [],
         produtos: [
-            { imagem: require("../../assets/produtos/3TENTOS-1.png"), titulo: "" },
-            { imagem: require("../../assets/produtos/3TENTOS-2.png"), titulo: "" },
-            { imagem: require("../../assets/produtos/3TENTOS-3.png"), titulo: "" },
+            { imagem: require("../../assets/produtos/3TENTOS-1.webp"), titulo: "" },
+            { imagem: require("../../assets/produtos/3TENTOS-2.webp"), titulo: "" },
+            { imagem: require("../../assets/produtos/3TENTOS-3.webp"), titulo: "" },
         ],
         sede: [],
     },
@@ -637,8 +637,8 @@ const parceiros = [
             }
         ],
         produtos: [
-            { imagem: require("../../assets/produtos/EASYPRO-1.png"), titulo: "" },
-            { imagem: require("../../assets/produtos/EASYPRO-2.png"), titulo: "" },
+            { imagem: require("../../assets/produtos/EASYPRO-1.webp"), titulo: "" },
+            { imagem: require("../../assets/produtos/EASYPRO-2.webp"), titulo: "" },
         ],
         sede: [
             { imagem: require("../../assets/sedes/EASYPRO-SEDE.png"), alt: "Sede da Easypro" }
@@ -693,12 +693,12 @@ const parceiros = [
         ],
         produtosDescricao: [],
         produtos: [
-            { imagem: require("../../assets/produtos/NBRTEC-1.png"), titulo: "TERMOMETRIA AUTOMÁTICA" },
-            { imagem: require("../../assets/produtos/NBRTEC-2.png"), titulo: "INSTALAÇÕES ELÉTRICAS" },
-            { imagem: require("../../assets/produtos/NBRTEC-3.png"), titulo: "QUADROS DE COMANDO" },
-            { imagem: require("../../assets/produtos/NBRTEC-4.png"), titulo: "QUADROS DE COMANDO" },
-            { imagem: require("../../assets/produtos/NBRTEC-5.png"), titulo: "CLOUD 2" },
-            { imagem: require("../../assets/produtos/NBRTEC-6.png"), titulo: "CLOUD 1" },
+            { imagem: require("../../assets/produtos/NBRTEC-1.webp"), titulo: "TERMOMETRIA AUTOMÁTICA" },
+            { imagem: require("../../assets/produtos/NBRTEC-2.webp"), titulo: "INSTALAÇÕES ELÉTRICAS" },
+            { imagem: require("../../assets/produtos/NBRTEC-3.webp"), titulo: "QUADROS DE COMANDO" },
+            { imagem: require("../../assets/produtos/NBRTEC-4.webp"), titulo: "QUADROS DE COMANDO" },
+            { imagem: require("../../assets/produtos/NBRTEC-5.webp"), titulo: "CLOUD 2" },
+            { imagem: require("../../assets/produtos/NBRTEC-6.webp"), titulo: "CLOUD 1" },
         ],
         sede: [],
     },
@@ -897,12 +897,12 @@ const parceiros = [
         ],
         produtosDescricao: [],
         produtos: [
-            { imagem: require("../../assets/produtos/YAWEI-1.png"), titulo: "Prensa Servo SKE1-80" },
-            { imagem: require("../../assets/produtos/YAWEI-2.png"), titulo: "Automatização" },
-            { imagem: require("../../assets/produtos/YAWEI-3.png"), titulo: "HPE" },
-            { imagem: require("../../assets/produtos/YAWEI-4.png"), titulo: "PBH" },
-            { imagem: require("../../assets/produtos/YAWEI-5.png"), titulo: "HLF" },
-            { imagem: require("../../assets/produtos/YAWEI-6.png"), titulo: "FBE" },
+            { imagem: require("../../assets/produtos/YAWEI-1.webp"), titulo: "Prensa Servo SKE1-80" },
+            { imagem: require("../../assets/produtos/YAWEI-2.webp"), titulo: "Automatização" },
+            { imagem: require("../../assets/produtos/YAWEI-3.webp"), titulo: "HPE" },
+            { imagem: require("../../assets/produtos/YAWEI-4.webp"), titulo: "PBH" },
+            { imagem: require("../../assets/produtos/YAWEI-5.webp"), titulo: "HLF" },
+            { imagem: require("../../assets/produtos/YAWEI-6.webp"), titulo: "FBE" },
 
         ],
         sede: [],
