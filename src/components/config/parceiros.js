@@ -703,30 +703,6 @@ const parceiros = [
         sede: [],
     },
     {
-        nome: "Widitec Qualyagro",
-        categoria: "associado",
-        tipo: "associado",
-        LogoNormal: require("../../assets/logos/logo-qualyagro-normal.webp"),
-        LogoWhite: require("../../assets/logos/logo-qualyagro-white.webp"),
-        instagram: "",
-        linkedin: "",
-        website: "https://www.qualyagro.com.br/",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
-        items: [],
-        segmentos: [],
-        produtosDescricao: [],
-        produtos: [
-
-        ],
-        sede: [],
-
-    },
-    {
         nome: "Pontes Máquinas",
         categoria: "associado",
         tipo: "associado",
@@ -767,70 +743,6 @@ const parceiros = [
         ],
         produtos: [],
         sede: [],
-    },
-    {
-        nome: "Shelter",
-        categoria: "associado",
-        tipo: "associado",
-        LogoNormal: require("../../assets/logos/logo-shelter-normal.webp"),
-        LogoWhite: require("../../assets/logos/logo-shelter-white.webp"),
-        instagram: "",
-        linkedin: "",
-        website: "https://shelterseguranca.com.br/",
-        logo: "",
-        slogan: "",
-        telefone: "",
-        endereco: "",
-        email: "",
-        sobre: [],
-        items: [],
-        segmentos: [],
-        produtosDescricao: [],
-        produtos: [
-
-        ],
-        sede: [],
-
-    },
-    {
-        nome: "Sirros IoT",
-        categoria: "associado",
-        tipo: "associado",
-        LogoNormal: require("../../assets/logos/logo-sirros-normal.webp"),
-        LogoWhite: require("../../assets/logos/logo-sirros-white.webp"),
-        instagram: "https://www.instagram.com/sirrosiot/",
-        linkedin: "https://www.linkedin.com/company/sirros-iot",
-        website: "https://sirros.io/",
-        logo: require("../../assets/logos/logo-sirrosiot-650x364.webp"),
-        slogan: "sua indústria rumo ao futuro 4.0.",
-        telefone: "(51) 99529-6403",
-        endereco: "Avenida General Daltro Filho,237 Bairro: Vila Nova, RS - 93520-305",
-        email: "brenda.reis@sirros.net",
-        sobre: [
-            "A Sirros IoT surgiu com propósito claro: Revolucionar a forma como a indústria se conecta aos seus dados. Desde 2016, desenvolvemos soluções inovadoras em Internet das Coisas que ajudam empresas a enxergar sua operação em tempo real, tomar decisões mais rápidas e alcançar novos níveis de eficiência. Combinamos soluções de Telemetria, Geolocalização, IA e Visão Computacional em uma plataforma robusta e amigável. Nosso diferencial está em traduzir tecnologia em soluções práticas e personalizadas, em, um tempo recorde de desenvolvimento.",
-            "Mais do que oferecer tecnologia de ponta, nosso compromisso é com a transformação real dos negócios. Atuamos lado a lado com nossos clientes, entendendo seus desafios e propondo soluções que se integram perfeitamente ao cotidiano operacional. Acreditamos que inovação só faz sentido quando é acessível, aplicável e gera impacto direto nos resultados. Por isso, nossa equipe é formada por profissionais apaixonados por resolver problemas, atentos às novas demandas do mercado e focados em entregar valor de forma contínua. Na Sirros, tecnologia, eficiência e proximidade andam juntas, criando um ecossistema inteligente onde máquinas, pessoas e dados conversam com fluidez, abrindo caminho para uma nova era da indústria conectada."
-        ],
-        items: [],
-        segmentos: [
-            { titulo: "", texto: "Tecnologia industrial com foco específico em Internet das Coisas (IoT) aplicada à indústria 4.0." }
-        ],
-        produtosDescricao: [
-            {
-                "titulo": "Telemetria Industrial e Eficiência Industrial (Sirros+S1 + MES Sirros):",
-                "descricao": "Solução completa para monitoramento de máquinas, linhas de produção e indicadores em tempo real. Com hardware plug and play e integração via nossa plataforma MES, é possível acompanhar produtividade, consumo energético, status de ativos e paradas não programadas. Ideal para indústrias que buscam digitalizar o chão de fábrica com agilidade e precisão."
-            },
-            {
-                "titulo": "Geolocalização Inteligente de Ativos, Veículos e Pessoas:",
-                "descricao": "Tecnologia robusta para rastreamento e gestão em tempo real de ativos físicos dentro e fora da planta industrial. A solução combina dispositivos compactos e de fácil instalação com a plataforma em nuvem da Sirros, permitindo visualização georreferenciada, alertas de movimentação e histórico de rotas. Mais controle e segurança para sua operação."
-            },
-            {
-                "titulo": "Visão Computacional e Inteligência Artificial:",
-                "descricao": "Soluções baseadas em câmeras inteligentes e algoritmos de IA para automação de inspeções visuais, controle de qualidade, leitura de códigos e detecção de padrões. A Visão Computacional Sirros aumenta a precisão, reduz falhas humanas e melhora a rastreabilidade nos processos produtivos — tudo integrado ao nosso ecossistema digital."
-            }
-
-        ],
-        produtos: [],
-        sede: [{ imagem: require("../../assets/sedes/SIRROSIOT-SEDE.png"), alt: "Sede da Sirros IoT" }],
     },
     {
         nome: "SKA",
